@@ -6,8 +6,10 @@
 📕  [DOC](/doc)         📕  [CODE](/code)         📕  [IMG](/img)        
 
 
-Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistermas profesionales, salvando siempre las distancias.
-Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias en el atleta.
+Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistemas profesionales, salvando siempre las distancias. Tiene como propósito medir los tiempos de reacción y cuantificar las mejorías en el atleta.
+
+
+Corregido con https://www.corrector.co/es/
 
 
 
