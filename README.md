@@ -16,10 +16,7 @@ Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias e
 </p>
 
 
-
-
-
-## ---
+---
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
