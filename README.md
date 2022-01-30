@@ -48,7 +48,7 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
 </p>
 
-- Es necesario para que el IDE de arduino reconozca nuestra placa de desarrollo como tarjeta.
+Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de desarrollo como tarjeta.
 
 - Verificar siempre que tenemos actualizado nuestra versión más reciente de Arduino IDE.
 
