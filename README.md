@@ -33,7 +33,14 @@ Básicamente consistirá en un disparo simulado, que incluiremos en una app por 
 
 ---
 
-# Materiales
+# Diagrama de flujo
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/diagrama.jpg">
+</p>
+
+
+
 
 ---
 
