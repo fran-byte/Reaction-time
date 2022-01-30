@@ -19,7 +19,7 @@ Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias e
 
 
 
-## ... BORRADOR ...
+## ---
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
