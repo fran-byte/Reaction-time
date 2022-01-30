@@ -1,4 +1,4 @@
-# TIEMPO REACCIÓN EN SALIDAS DE TACOS
+# TIEMPO REACCIÓN EN SALIDAS DE TACOS (En proyecto)
 # CARRERAS DE VELOCIDAD - ATLETISMO
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
