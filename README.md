@@ -48,14 +48,15 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
 </p>
 
-Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de desarrollo como tarjeta.
+Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de desarrollo como tarjeta:
 
 - Verificar siempre que tenemos actualizado nuestra versión más reciente de Arduino IDE.
 
 - A continuación vamos a Archivo/Preferencias y en la casilla  “Gestor de URLs Adicionales de Tarjetas” agregamos:
 
-- http://arduino.esp8266.com/stable/package_esp8266com_index.json
-
+```
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+```
 - Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266", seleccionamos e instalamos.
 
 ---
