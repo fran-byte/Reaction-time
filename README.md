@@ -13,7 +13,8 @@ Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias e
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg">
 </p>
-![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg)
+
+
 
 
 
