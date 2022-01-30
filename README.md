@@ -8,9 +8,11 @@
 Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistermas profesionales, salvando siempre las distancias.
 Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias en el atleta.
 
+![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/serghei-trofimov-XIKBB9upCcI-unsplash.jpg)
+
 ![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg)
 
-![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/serghei-trofimov-XIKBB9upCcI-unsplash.jpg)
+
 
 ## ... BORRADOR ...
 
