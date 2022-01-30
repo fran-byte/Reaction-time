@@ -34,7 +34,7 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
 
 ---
 
-# Diagrama de flujo
+# Diagrama
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/diag.jpg">
