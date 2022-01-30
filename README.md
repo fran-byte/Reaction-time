@@ -25,7 +25,7 @@ El sistema se basará en dos componentes:
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
-Básicamente consistirá en un disparo simulado, que incluiremos en una app por wifi en un simple teléfono móvil, dando paso a una cuenta en milisegundos
+Básicamente consistirá en un disparo simulado, que incluiremos en una app por wifi en un simple teléfono móvil, dando paso a una cuenta en milisegundos.
 Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos de salida al darse impulso con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente capturaremos ese tiempo y lo transmitiremos de vuelta a nuestra app.
 
 <p align="center">
