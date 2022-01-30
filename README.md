@@ -8,14 +8,14 @@
 Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistermas profesionales, salvando siempre las distancias.
 Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias en el atleta.
 
-
+![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/img/tacos_salida_horizontal.jpg)
 
 ## ... BORRADOR ...
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
 
-(https://github.com/fran-byte/tiempo_reaccion/blob/main/img/tacos_salida_horizontal.jpg)
+
 
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
