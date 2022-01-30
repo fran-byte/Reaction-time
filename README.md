@@ -15,6 +15,10 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg">
 </p>
 
+<p align="center">
+  <img src="https://youtu.be/8Q-biojlI64">
+</p>
+
 
 ---
 # Funcionamiento
