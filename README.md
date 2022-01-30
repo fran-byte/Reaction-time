@@ -48,9 +48,9 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
 
 - Verificar siempre que tenemos actualizado nuestra versión más reciente de Arduino IDE.
 
-- A continuación vamos a archivo/Preferencias y en la casilla  “Gestor de URLs Adicionales de Tarjetas” agregamos:
+- A continuación vamos a Archivo/Preferencias y en la casilla  “Gestor de URLs Adicionales de Tarjetas” agregamos:
 
-http://arduino.esp8266.com/stable/package_esp8266com_index.json
+- http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 - Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266 by ESP8266 Community", seleccionamos e instalamos.
 
