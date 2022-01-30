@@ -22,7 +22,13 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 El sistema se basará en dos componentes un acelerómetro ADXL335 y una placa de desarrollo ESP8266.
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
-Básicamente consistirá en un disparo simulado, que incluiremos en una app por bluetooth en un simple teléfono móvil, dando paso a una cuenta en milisegundos y viendose esta interrumpida por el movimiento captado en elaccelerómetro ADXL335 generado en uno de los tacos de salida al darse impulso con el pie el atleta, capturaremos ese tiempo y lo transmitiremos de vuelta a nuestra app.
+Básicamente consistirá en un disparo simulado, que incluiremos en una app por bluetooth en un simple teléfono móvil, dando paso a una cuenta en milisegundos y viendose esta interrumpida por el movimiento captado en el accelerómetro ADXL335 generado en uno de los tacos de salida al darse impulso con el pie el atleta, capturaremos ese tiempo y lo transmitiremos de vuelta a nuestra app.
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/modulo-esp8266-esp&ADXL335jpg.jpg">
+</p>
+---
+
+# Materiales
 
 ---
 
