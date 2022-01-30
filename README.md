@@ -10,7 +10,7 @@ Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias e
 
 ![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida_horizontal.jpg)![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg)
 
-[Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/serghei-trofimov-XIKBB9upCcI-unsplash.jpg)
+![Tacos de Salida](https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/serghei-trofimov-XIKBB9upCcI-unsplash.jpg)
 
 ## ... BORRADOR ...
 
