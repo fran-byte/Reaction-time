@@ -14,7 +14,9 @@ Tiene como proposito medir los tiempos de reacción y cuantificar las mejorias e
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
+
 (https://github.com/fran-byte/tiempo_reaccion/blob/main/img/tacos_salida_horizontal.jpg)
+
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
 
