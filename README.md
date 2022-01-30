@@ -52,7 +52,7 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
 
 - http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-- Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266 by ESP8266 Community", seleccionamos e instalamos.
+- Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266", seleccionamos e instalamos.
 
 ---
 
