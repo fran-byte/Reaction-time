@@ -100,17 +100,15 @@ Características generales:
 </p>
 
 ## Pines PWM
-Notarás que algunos de los pines digitales vienen con la funcionalidad de Modulación de Ancho de Pulso, o PWM. Esto nos proporciona un medio de simular una señal analógica usando una serie rápida de pulsos digitales. Cuanto más larga sea la parte «on» de estos ciclos, más fuerte parecerá la señal.
+Notarás que algunos de los pines digitales vienen con la funcionalidad de **Modulación de Ancho de Pulso**, o **PWM**. Esto nos proporciona un medio de simular una señal analógica usando una serie rápida de pulsos digitales.
 
-Así que, si enciendes y apagas un LED rápidamente, cuanto más largo sea el ciclo de encendido, más brillante parecerá el LED.
-
-Las señales PWM también se usan comúnmente para controlar motores. Cuanto más alta sea la función PWM, más potencia se transmitirá al motor.
+Las señales PWM se usan comúnmente para controlar motores.
 
 Se podría hacer esto usando cualquiera de las salidas digitales de la MCU escribiendo un ciclo de código que haga un ciclo rápido de encendido y apagado de un pin determinado, pero esto interferiría con el programa principal y consumiría recursos valiosos.
 
 Una mejor solución es usar una de las salidas PWM separadas, que se encargará de todos los ciclos por ti una vez que hayan recibido un valor.
 
-Puedes escribir un valor en un PWM usando la función analogWrite(). Asegúrate de que has seleccionado una salida compatible con PWM.
+Puedes escribir un valor en un PWM usando la función **analogWrite()**. Asegúrate de que has seleccionado una salida compatible con **PWM**.
 
 En el NodeMCU, estos son D2, D5, D6 y D8.
 
@@ -118,15 +116,15 @@ En el NodeMCU, estos son D2, D5, D6 y D8.
 El NodeMCU soporta los tres principales protocolos de comunicación en serie que se encuentran en el Arduino (y una gama de otros dispositivos equipados con MCU). Estos son:
 
 ### - UART
-UART, o Receptor/Transmisor Asíncrono Universal, es una forma de comunicación en serie que depende de que un solo cable vaya en cualquier dirección. Dado que el formato es asíncrono, no hay necesidad de enviar una señal de reloj por un cable separado: los datos se transmiten simplemente a una velocidad predeterminada (la velocidad en baudios), con los dispositivos conectados desempaquetando los datos a medida que llegan al otro extremo. En el NodeMCU, la UART se hace a través de los pines **Rx** y **Tx**, que se utilizan respectivamente para recibir y transmitir.
+UART, o **Receptor/Transmisor Asíncrono Universal**, es una forma de **comunicación en serie** que depende de que un solo cable vaya en cualquier dirección. Dado que el formato es asíncrono, no hay necesidad de enviar una señal de reloj por un cable separado: los datos se transmiten simplemente a una velocidad predeterminada (la velocidad en **baudios**), con los dispositivos conectados desempaquetando los datos a medida que llegan al otro extremo. Se hace a través de los pines **Rx** y **Tx**, que se utilizan respectivamente para recibir y transmitir.
 
 ### - I2C
 El circuito integrado tiene una señal de reloj separada, pero usa un solo cable para la transmisión de datos. Es genial para conectar un único dispositivo maestro a múltiples esclavos, cada uno de los cuales tiene una dirección separada.
 
-I2C también se llama ‘TWI’, o ‘interfaz de dos cables’. Los pines **SCL** y **SDA** están en los pines digitales **D1** y **D2**. Como su nombre lo indica, I2C es genial para conectar circuitos integrados entre sí.
+I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pines **SCL** y **SDA** están en los pines digitales **D1** y **D2**. Como su nombre lo indica, I2C es genial para conectar circuitos integrados entre sí.
 
 ### - SPI
-Nuestra tercera variedad de comunicación en serie es SPI, o «interfaz periférica en serie». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero usa tres pines en lugar de sólo dos. También es full-dúplex, lo que significa que cada operación de lectura es capaz de coincidir con una operación de escritura que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
+ «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
 ---
 
