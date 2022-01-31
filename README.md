@@ -25,7 +25,7 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 
 El sistema se basará en dos componentes:
 - Placa de desarrollo **NodeMCU ESP8266**.
-- Módulo MD-GY61 basado en el acelerómetro **ADXL335**.
+- Módulo Acelerómetro **CJMCU ADXL345**.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
@@ -161,6 +161,10 @@ I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pin
 Este módulo tiene un acelerómetro ADXL335 de 3 ejes que nos permite medir aceleraciones del rango de +3G -3G.
 
 Se trata de un sensor analógico que nos proporcionará mediante 3 pines, tres voltajes proporcionales a la aceleración de cada eje.
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ADXL335.jpg">
+</p>
 
 Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el chip, por lo que puede funcionar con cualquier voltaje de 3,3 V a 5 V. Sin embargo, no hay conversión de nivel lógico, por lo que las conexiones I2C/SPI están a 3,3 V. La conexión a un sistema de 5 V requerirá un convertidor de nivel lógico adecuado.
 
