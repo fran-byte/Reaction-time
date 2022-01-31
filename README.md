@@ -210,7 +210,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345:
 - Power-Bank de 5v a entrada USB del NodeMCU ESP8266 y del PIN 3.3V del NodeMCU a 3.3 V del sensor del acelerómetro ADXL-345.
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conex.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conexion.jpg">
 </p>
 
 
