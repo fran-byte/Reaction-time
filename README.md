@@ -5,6 +5,9 @@
 
 📕  [DOC](/doc)         📕  [CODE](/code)         📕  [IMG](/img)        
 
+## Autor ️
+<img src="mdArchives/logo.png"/> **fran-byte**
+
 
 Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistemas profesionales, salvando siempre las distancias. Tiene como propósito medir los tiempos de reacción y cuantificar las mejorías en el atleta.
 
@@ -151,14 +154,11 @@ I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pin
 ### - SPI
  «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
----
 
-## Autor ️
-<img src="mdArchives/logo.png"/> **fran-byte**
 
 
 
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
 
----
+
