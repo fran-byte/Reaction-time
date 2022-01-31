@@ -120,7 +120,7 @@ La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez e
 # PINOUT datasheet
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266_devkit.png">
 </p>
 
 ## Pines PWM
