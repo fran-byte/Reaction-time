@@ -17,7 +17,7 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 
 
 
----
+
 # Funcionamiento
 
 El sistema se basará en dos componentes:
@@ -33,7 +33,7 @@ Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/modulo-esp8266-esp&ADXL335jpg.jpg">
 </p>
 
----
+
 
 # Diagrama
 
@@ -41,7 +41,7 @@ Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/diag.jpg">
 </p>
 
----
+
 
 # Instalando nuestra tarjeta ESP8266 en Arduino
 
@@ -58,7 +58,6 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
 - Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266", seleccionamos e instalamos.
 
----
 
 # Desgranando el ESP8266
 
