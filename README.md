@@ -105,9 +105,13 @@ Así que, si enciendes y apagas un LED rápidamente, cuanto más largo sea el ci
 
 Las señales PWM también se usan comúnmente para controlar motores. Cuanto más alta sea la función PWM, más potencia se transmitirá al motor.
 
-Se podría hacer esto usando cualquiera de las salidas digitales de la MCU escribiendo un ciclo de código que haga un ciclo rápido de encendido y apagado de un pin determinado, pero esto interferiría con el programa principal y consumiría recursos valiosos. Una mejor solución es usar una de las salidas PWM separadas, que se encargará de todos los ciclos por ti una vez que hayan recibido un valor.
+Se podría hacer esto usando cualquiera de las salidas digitales de la MCU escribiendo un ciclo de código que haga un ciclo rápido de encendido y apagado de un pin determinado, pero esto interferiría con el programa principal y consumiría recursos valiosos.
 
-Puedes escribir un valor en un PWM usando la función analogWrite(). Asegúrate de que has seleccionado una salida compatible con PWM. En el NodeMCU, estos son D2, D5, D6 y D8.
+Una mejor solución es usar una de las salidas PWM separadas, que se encargará de todos los ciclos por ti una vez que hayan recibido un valor.
+
+Puedes escribir un valor en un PWM usando la función analogWrite(). Asegúrate de que has seleccionado una salida compatible con PWM.
+
+En el NodeMCU, estos son D2, D5, D6 y D8.
 
 ## Comunicación
 El NodeMCU soporta los tres principales protocolos de comunicación en serie que se encuentran en el Arduino (y una gama de otros dispositivos equipados con MCU). Estos son:
