@@ -21,13 +21,13 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 # Funcionamiento
 
 El sistema se basará en dos componentes:
-- Una placa de desarrollo ESP8266.
-- Un acelerómetro ADXL335.
+- Una placa de desarrollo **NodeMCU ESP8266**.
+- Un acelerómetro **ADXL335**.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
-Básicamente consistirá en un disparo simulado, que incluiremos en una app por wifi en un simple teléfono móvil, dando paso a una cuenta en milisegundos.
-Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos de salida al darse impulso con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
+Básicamente consistirá en un disparo simulado situado en una app en un móvil, dando paso a una cuenta en milisegundos.
+Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/modulo-esp8266-esp&ADXL335jpg.jpg">
@@ -72,7 +72,8 @@ El ESP8266 normalmente viene integrado en un módulo. Esto es debido a que el pr
 A partir de este módulo surgieron muchos más hasta que finalmente irrumpió en el mercado el ESP-12, el más popular de todos los módulos. Este módulo se utiliza en multitud de placas siendo las más famosas NodeMCU y Wemos.
 
 # NodeMCU ESP8266
-Plataforma de código abierto que puede conectar objetos y permitir transferencia de datos utilizando protocolo Wi-Fi.
+Es una plataforma de desarrollo similar a Arduino y orientada a IoT (Internet de las cosas).
+La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez está basado en el SoC Wi-Fi ESP8266, integra además el conversor **USB-Serial TTL CP2102** y conector micro-USB necesario para la programación y comunicación a PC. Está diseñado especialmente para trabajar montado en protoboard o soldado sobre una placa. Posee un regulador de voltaje de 3.3V en placa, esto permite alimentar la placa directamente del puerto micro-USB o por los pines 5V y GND. **Los pines de entradas/salidas (GPIO) trabajan a 3.3V** por lo que para conexión a sistemas de 5V es necesario utilizar conversores
 
 Características generales:
 
@@ -117,15 +118,15 @@ En el NodeMCU, estos son D2, D5, D6 y D8.
 El NodeMCU soporta los tres principales protocolos de comunicación en serie que se encuentran en el Arduino (y una gama de otros dispositivos equipados con MCU). Estos son:
 
 ### - UART
-UART, o Receptor/Transmisor Asíncrono Universal, es una forma de comunicación en serie que depende de que un solo cable vaya en cualquier dirección. Dado que el formato es asíncrono, no hay necesidad de enviar una señal de reloj por un cable separado: los datos se transmiten simplemente a una velocidad predeterminada (la velocidad en baudios), con los dispositivos conectados desempaquetando los datos a medida que llegan al otro extremo. En el NodeMCU, la UART se hace a través de los pines Rx y Tx, que se utilizan respectivamente para recibir y transmitir.
+UART, o Receptor/Transmisor Asíncrono Universal, es una forma de comunicación en serie que depende de que un solo cable vaya en cualquier dirección. Dado que el formato es asíncrono, no hay necesidad de enviar una señal de reloj por un cable separado: los datos se transmiten simplemente a una velocidad predeterminada (la velocidad en baudios), con los dispositivos conectados desempaquetando los datos a medida que llegan al otro extremo. En el NodeMCU, la UART se hace a través de los pines **Rx** y **Tx**, que se utilizan respectivamente para recibir y transmitir.
 
 ### - I2C
 El circuito integrado tiene una señal de reloj separada, pero usa un solo cable para la transmisión de datos. Es genial para conectar un único dispositivo maestro a múltiples esclavos, cada uno de los cuales tiene una dirección separada.
 
-I2C también se llama ‘TWI’, o ‘interfaz de dos cables’. Los pines SCL y SDA están en los pines digitales D1 y D2. Como su nombre lo indica, I2C es genial para conectar circuitos integrados entre sí.
+I2C también se llama ‘TWI’, o ‘interfaz de dos cables’. Los pines **SCL** y **SDA** están en los pines digitales **D1** y **D2**. Como su nombre lo indica, I2C es genial para conectar circuitos integrados entre sí.
 
 ### - SPI
-Nuestra tercera variedad de comunicación en serie es SPI, o «interfaz periférica en serie». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero usa tres pines en lugar de sólo dos. También es full-dúplex, lo que significa que cada operación de lectura es capaz de coincidir con una operación de escritura que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: D5 es el CLK; D6 es el Master In Slave Out (o MISO); D7 es el Master Out Slave In (MOSI).
+Nuestra tercera variedad de comunicación en serie es SPI, o «interfaz periférica en serie». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero usa tres pines en lugar de sólo dos. También es full-dúplex, lo que significa que cada operación de lectura es capaz de coincidir con una operación de escritura que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
 ---
 
