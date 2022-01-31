@@ -106,7 +106,9 @@ La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez e
 - Led indicadores: 2
 - Dimensiones: 49*26*12 mm
 - Peso: 9 gramos
+- 
 **CONECTIVIDAD**
+
 -SDIO 2.0, SPI, UART
 -Integra RF switch, balun, 24dBm PA, DCXO y PMU
 -Posee un procesador RISC, memoria en chip e interface para memoria externa
