@@ -45,9 +45,7 @@ Esta cuenta será interrumpida por el movimiento (generado en uno de los tacos d
 
 # Instalando nuestra tarjeta ESP8266 en Arduino
 
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
-</p>
+
 
 Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de desarrollo como tarjeta:
 
@@ -59,6 +57,15 @@ Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de 
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
 - Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266", seleccionamos e instalamos.
+
+---
+
+# Desgranando el ESP8266
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
+</p>
+
 
 ---
 
