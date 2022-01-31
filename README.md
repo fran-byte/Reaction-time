@@ -202,7 +202,7 @@ Dimensiones:  19x14 mm
 
 # CONEXIONADO del PROYECTO
 
-Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345:
+Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
 
 - PIN **D2** del NodeMCU ESP8266 al PIN **SDI** del acelerómetro. 
 - PIN **D1** del NodeMCU ESP8266 al PIN **SDA** del acelerómetro.
