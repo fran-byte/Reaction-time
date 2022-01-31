@@ -109,14 +109,14 @@ La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez e
  
 **CONECTIVIDAD**
 
--SDIO 2.0, SPI, UART
--Integra RF switch, balun, 24dBm PA, DCXO y PMU
--Posee un procesador RISC, memoria en chip e interface para memoria externa
--Procesador MAC/Baseband integrado
--Interface I2S para apliaciones de audio de alta calidad
--Reguladores de voltaje lineales "low-dropout" en chip
--Arquitectura propietaria de generacion de clock "spurious free"
--Módulos WEP, TKIP, AES y WAPI integrados
+- SDIO 2.0, SPI, UART
+- Integra RF switch, balun, 24dBm PA, DCXO y PMU
+- Posee un procesador RISC, memoria en chip e interface para memoria externa
+- Procesador MAC/Baseband integrado
+- Interface I2S para apliaciones de audio de alta calidad
+- Reguladores de voltaje lineales "low-dropout" en chip
+- Arquitectura propietaria de generacion de clock "spurious free"
+- Módulos WEP, TKIP, AES y WAPI integrados
 
 # PINOUT datasheet
 
