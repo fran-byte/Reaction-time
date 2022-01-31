@@ -154,19 +154,42 @@ I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pin
 ### - SPI
  «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
-# MD-GY61 modulo acelerometro de tres ejes ADXL335
+# CJMCU ADXL345 acelerometro de tres ejes
 
-Este módulo tiene un acelerómetro ADXL335 de 3 ejes con salida analógica de Analog Devices (3 salidas analógicas para los ejes X, Y y Z), incluye condensadores de desacoplo para un óptimo funcionamiento.
+**Modelo: CJMCU ADXL345**
 
-Mide la aceleración con un rango mínimo de escala máxima de ± 3 g.
-Puede medir la aceleración estática de la gravedad en la detección de inclinación
-Aplicaciones, así como la aceleración dinámica.
-Movimiento, choque o vibración.
-El usuario selecciona el ancho de banda del acelerómetro usando el
-Condensadores CX, CY y CZ en los pines XOUT, YOUT y ZOUT.
-Los anchos de banda se pueden seleccionar para adaptarse a la aplicación, con un
-rango de 0,5 Hz a 1600 Hz para los ejes X e Y, y un rango
-De 0,5 Hz a 550 Hz para el eje Z.
+Este módulo tiene un acelerómetro ADXL335 de 3 ejes que nos permite medir aceleraciones del rango de +3G -3G.
+
+Se trata de un sensor analógico que nos proporcionará mediante 3 pines, tres voltajes proporcionales a la aceleración de cada eje.
+
+Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el chip, por lo que puede funcionar con cualquier voltaje de 3,3 V a 5 V. Sin embargo, no hay conversión de nivel lógico, por lo que las conexiones I2C/SPI están a 3,3 V. La conexión a un sistema de 5 V requerirá un convertidor de nivel lógico adecuado.
+
+Voltaje de entrada: 3.3V~5V
+
+Voltaje de operación: 2V~3.6V
+
+Corriente de operación: 140uA
+
+Interfaz: 
+
+· I2C
+
+· SPI (5MHz)
+
+Auto-test:
+
+Ejes x, y, z
+
+Frecuencia de reloj interna:  400KHz
+
+Sensibilidad:  4 LSB/g
+
+Sensibilidad seleccionable:  2g/4g/8g/16g
+
+Temperatura de operación: -40°C~85°C
+
+Dimensiones:  19x14 mm
+
 
 
 ## Licencia
