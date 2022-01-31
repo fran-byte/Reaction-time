@@ -80,13 +80,17 @@ Características generales:
 - Programación a través de Arduino IDE o IUA
 - Disponible como punto de acceso, estación practicable en apps de API impulsadas por eventos
 - Atena interna
-- 13 pines GPIO
-- 10 canales PWM
-- I2C
+- Voltaje : 3.0 ~ 3.6V
+- Corriente: 80mA
+- CPU Tensilica Xtensa LX106 de 32 bits RISC que funciona a 80 MHz
+- 16 Pines GPIO
 - SPI
-- ADC
-- UART
-- 1-Wire
+- I2C
+- I2S
+- UART – 2x TX y 1x RX
+- 1x 10bit ADC
+- Temperatura de funcionamiento : -40°C ~ 125°C
+- Rango de frecuencia: 2400 ~ 2483.5MHz
 
 # PINOUT datasheet
 
