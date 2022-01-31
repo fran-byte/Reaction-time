@@ -1,5 +1,5 @@
-# TIEMPO REACCIÓN de los CORREDORES EN SALIDAS DE TACOS (En proyecto)
-# ATLETISMO
+# TIEMPO REACCIÓN  (En proyecto)
+# DE CORREDORES EN SALIDAS DE TACOS
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
 
