@@ -76,27 +76,17 @@ Plataforma de código abierto que puede conectar objetos y permitir transferenci
 
 Características generales:
 
-Fácil aprendizaje
-
-Programación a través de Arduino IDE o IUA
-
-Disponible como punto de acceso, estación practicable en apps de API impulsadas por eventos
-
-Atena interna
-
-13 pines GPIO
-
-10 canales PWM
-
-I2C
-
-SPI
-
-ADC
-
-UART
-
-1-Wire
+- Fácil aprendizaje
+- Programación a través de Arduino IDE o IUA
+- Disponible como punto de acceso, estación practicable en apps de API impulsadas por eventos
+- Atena interna
+- 13 pines GPIO
+- 10 canales PWM
+- I2C
+- SPI
+- ADC
+- UART
+- 1-Wire
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/gpio-nodemcu-esp8266.svg">
