@@ -126,7 +126,7 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
 # PINOUT datasheet
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266_devkit.png">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP-12E-Development-Board-ESP8266-NodeMCU-Pinout.png">
 </p>
 
 <p align="center">
