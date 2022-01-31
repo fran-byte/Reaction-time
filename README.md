@@ -162,6 +162,10 @@ Este módulo tiene un acelerómetro ADXL335 de 3 ejes que nos permite medir acel
 
 Se trata de un sensor analógico que nos proporcionará mediante 3 pines, tres voltajes proporcionales a la aceleración de cada eje.
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ADXL335.jpg">
+</p>
+
 Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el chip, por lo que puede funcionar con cualquier voltaje de 3,3 V a 5 V. Sin embargo, no hay conversión de nivel lógico, por lo que las conexiones I2C/SPI están a 3,3 V. La conexión a un sistema de 5 V requerirá un convertidor de nivel lógico adecuado.
 
 Voltaje de entrada: 3.3V~5V
