@@ -194,6 +194,17 @@ Temperatura de operación: -40°C~85°C
 
 Dimensiones:  19x14 mm
 
+# CONEXIONADO del PROYECTO
+
+Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345:
+
+- PIN D2 del NodeMCU ESP8266 al PIN SDI del acelerómetro. 
+- PIN D1 del NodeMCU ESP8266 al PIN SDA del acelerómetro.
+- PIN GND del NodeMCU ESP8266 al PIN GND del sensor del acelerómetro.
+- Battería 3.3V al PIN VCC 3V del NodeMCU ESP8266 3 con el pin VCC en el sensor del acelerómetro ADXL 345
+
+Para testeo en banco de trabajo o con portátil utilizaremos la alimentación USB que alimentará los dos Módulos
+
 
 
 ## Licencia
