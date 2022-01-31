@@ -24,8 +24,8 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 # Funcionamiento
 
 El sistema se basará en dos componentes:
-- Una placa de desarrollo **NodeMCU ESP8266**.
-- Un acelerómetro **ADXL335**.
+- Placa de desarrollo **NodeMCU ESP8266**.
+- Módulo MD-GY61 basado en el acelerómetro **ADXL335**.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
@@ -154,8 +154,19 @@ I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pin
 ### - SPI
  «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
+# MD-GY61 modulo acelerometro de tres ejes ADXL335
 
+Este módulo tiene un acelerómetro ADXL335 de 3 ejes con salida analógica de Analog Devices (3 salidas analógicas para los ejes X, Y y Z), incluye condensadores de desacoplo para un óptimo funcionamiento.
 
+Mide la aceleración con un rango mínimo de escala máxima de ± 3 g.
+Puede medir la aceleración estática de la gravedad en la detección de inclinación
+Aplicaciones, así como la aceleración dinámica.
+Movimiento, choque o vibración.
+El usuario selecciona el ancho de banda del acelerómetro usando el
+Condensadores CX, CY y CZ en los pines XOUT, YOUT y ZOUT.
+Los anchos de banda se pueden seleccionar para adaptarse a la aplicación, con un
+rango de 0,5 Hz a 1600 Hz para los ejes X e Y, y un rango
+De 0,5 Hz a 550 Hz para el eje Z.
 
 
 ## Licencia
