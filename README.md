@@ -25,7 +25,7 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 
 El sistema se basará en dos componentes:
 - Placa de desarrollo **NodeMCU ESP8266**.
-- Módulo MD-GY61 basado en el acelerómetro **ADXL335**.
+- Módulo Acelerómetro **CJMCU ADXL345**.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
