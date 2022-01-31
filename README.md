@@ -73,21 +73,29 @@ A partir de este módulo surgieron muchos más hasta que finalmente irrumpió en
 
 # NodeMCU ESP8266
 Plataforma de código abierto que puede conectar objetos y permitir transferencia de datos utilizando protocolo Wi-Fi.
-Características importantes de los microcontroladores como GPIO, PWM, ADC... 
-puede resolver muchas de las necesidades del proyecto por sí mismo.
 
 Características generales:
 
 Fácil aprendizaje
+
 Programación a través de Arduino IDE o IUA
+
 Disponible como punto de acceso, estación practicable en apps de API impulsadas por eventos
+
 Atena interna
+
 13 pines GPIO
+
 10 canales PWM
+
 I2C
+
 SPI
+
 ADC
+
 UART
+
 1-Wire
 
 <p align="center">
