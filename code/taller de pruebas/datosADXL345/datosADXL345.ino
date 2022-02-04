@@ -9,7 +9,7 @@
 
 ADXL345 adxl = ADXL345();
 
-const unsigned long intervaloLecturaTemp = 200; // leeremos cada ... milisegundos  (Evito usar la función delay)
+const unsigned long intervaloLecturaTemp = 1; // leeremos cada ... milisegundos  (Evito usar la función delay)
 unsigned long tiempoAnterior = 0; // almacena la ultima vez que se lanzo nuestro evento
 
 void setup() 
@@ -19,7 +19,7 @@ void setup()
    Serial.println();
 
    adxl.powerOn();            
-   adxl.setRangeSetting(16);       //Definir el rango, valores 2, 4, 8 o 16
+   adxl.setRangeSetting(2);       //Definir el rango, valores 2, 4, 8 o 16
 }
 
 void loop() 
@@ -31,9 +31,9 @@ void loop()
        adxl.readAccel(&x, &y, &z);  
        Serial.print(x);
        Serial.print(", ");
-       Serial.print(y);
-       Serial.print(", ");
-       Serial.println(z); 
+       Serial.println(y);
+       //Serial.print(", ");
+       //Serial.println(z); 
        tiempoAnterior = tiempoActual;
    }
 }
