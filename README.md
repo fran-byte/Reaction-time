@@ -5,6 +5,8 @@
 
 📕  [DOC](/doc)         📕  [CODE](/code)         📕  [IMG](/img)        
 
+[- DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+[- CÓDIGO](#)
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
 
