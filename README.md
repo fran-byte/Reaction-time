@@ -85,6 +85,7 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
 **ESPECIFICACIONES TÉCNICAS:**
 - Voltaje de Alimentación: 5V DC
 - Voltaje de Entradas/Salidas: 3.3V DC (**No usar 5V**)
+- Corriente nominal por pin: 12mA
 - Placa: NodeMCU v2 (Amica)
 - Chip conversor USB-serial: CP2102
 - SoM: ESP-12E (Ai-Thinker)
