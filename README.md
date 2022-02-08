@@ -190,31 +190,27 @@ Se trata de un sensor analógico que nos proporcionará mediante 3 pines, tres v
 
 Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el chip, por lo que puede funcionar con cualquier voltaje de 3,3 V a 5 V. Sin embargo, no hay conversión de nivel lógico, por lo que las conexiones I2C/SPI están a 3,3 V. La conexión a un sistema de 5 V requerirá un convertidor de nivel lógico adecuado.
 
-Voltaje de entrada: 3.3V~5V
+- Voltaje de entrada: 3.3V~5V
 
-Voltaje de operación: 2V~3.6V
+- Voltaje de operación: 2V~3.6V
 
-Corriente de operación: 140uA
+- Corriente de operación: 140uA
 
-Interfaz: 
+- Interfaz:  I2C / SPI (5MHz)
 
-· I2C
+- Auto-test
 
-· SPI (5MHz)
+- Ejes x, y, z
 
-Auto-test:
+- Frecuencia de reloj interna:  400KHz
 
-Ejes x, y, z
+- Sensibilidad:  4 LSB/g
 
-Frecuencia de reloj interna:  400KHz
+- Sensibilidad seleccionable:  2g/4g/8g/16g
 
-Sensibilidad:  4 LSB/g
+-Temperatura de operación: -40°C~85°C
 
-Sensibilidad seleccionable:  2g/4g/8g/16g
-
-Temperatura de operación: -40°C~85°C
-
-Dimensiones:  19x14 mm
+- Dimensiones:  19x14 mm
 
 ## COMPONENTES:
 - Placa de desarrollo NodeMCU ESP8266.
