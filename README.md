@@ -1,5 +1,5 @@
 # TIEMPO REACCIÓN  (BORRADOR de proyecto)
-# DE CORREDORES EN SALIDAS DE TACOS
+## TIEMPO DE REACCIÓN EN SALIDAS PARA ATLETAS
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
 
