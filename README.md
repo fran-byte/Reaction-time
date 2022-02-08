@@ -5,11 +5,11 @@
 
         
 
-#:electric_plug: [DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
+:electric_plug: [DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
 
-#:computer: [CÓDIGO](#) 
+:computer: [CÓDIGO](#) 
 
-#📕 [DOCUMENTACIÓN](/doc)
+📕 [DOCUMENTACIÓN](/doc)
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
