@@ -3,11 +3,13 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
 
-📕  [DOC](/doc)         📕  [CODE](/code)         📕  [IMG](/img)        
+        
 
 :electric_plug: [DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
 
 :computer: [CÓDIGO](#) 
+
+📕 [DOCUMENTACIÓN](/doc)
 
 ## Autor ️
 <img src="mdArchives/logo.png"/> **fran-byte**
