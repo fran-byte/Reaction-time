@@ -208,7 +208,7 @@ Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el 
 
 - Sensibilidad seleccionable:  2g/4g/8g/16g
 
--Temperatura de operación: -40°C~85°C
+- Temperatura de operación: -40°C~85°C
 
 - Dimensiones:  19x14 mm
 
