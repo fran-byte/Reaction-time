@@ -1,5 +1,5 @@
 # TIEMPO DE REACCIÓN  (... en proyecto)
-## SALIDAS de TACOS en CARRERAS de VELOCIDAD
+## MEDICIÓN del TR en SALIDAS de TACOS
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
