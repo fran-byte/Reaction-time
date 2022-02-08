@@ -16,11 +16,7 @@
 
 -[Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
--[Desgranando el ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#desgranando-el-esp8266)
-
--[NodeMCU ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
-
--[PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+-[PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
 
 -[CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
 
