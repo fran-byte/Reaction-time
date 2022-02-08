@@ -1,4 +1,4 @@
-# TIEMPO REACCIÓN  (... en proyecto)
+# TIEMPO DE REACCIÓN  (... en proyecto)
 ## SALIDAS de TACOS de ATLETAS en CARRERAS de VELOCIDAD
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
@@ -22,7 +22,7 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/tacos_salida.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
 </p>
 
 
