@@ -209,7 +209,7 @@ Dimensiones:  19x14 mm
 - Power-Bank 5v.
 - Resistenvia de 22 Ohmios.
 - Transistor NPN 2N2222.
-- Buzzer 3-30V DC - 30mA (
+- Buzzer 3-30V DC - 30mA.
 
 # CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
