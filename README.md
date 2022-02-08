@@ -219,7 +219,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - **Positivo del Buzzer** a **Vin** del NodeMCU ESP8266 **(+5V)**
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/c.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/diagrama-conexiones.jpg">
 </p>
 
 
