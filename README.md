@@ -10,23 +10,23 @@
         
 ## Índice 
 
--[Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
+- [Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
 
--[Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
+- [Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
 
--[Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
+- [Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
--[PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+- [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
 
--[CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+- [CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
 
--[Diagrama de Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+- [Diagrama de Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
 
--[Componentes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
+- [Componentes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
 
--[Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+- [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
 
--[Código](#) 
+- [Código](#) 
 
 
 
