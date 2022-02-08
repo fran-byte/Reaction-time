@@ -1,34 +1,45 @@
 # TIEMPO DE REACCIÓN  (... en proyecto)
-## SALIDAS de TACOS de ATLETAS en CARRERAS de VELOCIDAD
-
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
-
-        
-
-:electric_plug: [DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
-
-:computer: [CÓDIGO](#) 
-
-📕 [DOCUMENTACIÓN](/doc)
-
-## Autor ️
-<img src="mdArchives/logo.png"/> **fran-byte**
-
-
-Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistemas profesionales, salvando siempre las distancias. Tiene como propósito medir los tiempos de reacción y cuantificar las mejorías en el atleta.
-
-La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
-
-
+## SALIDAS de TACOS en CARRERAS de VELOCIDAD
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
 </p>
 
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
+
+        
+## Índice 
+
+-[Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
+
+-[Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
+
+-[Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
+
+-[Desgranando el ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#desgranando-el-esp8266)
+
+-[NodeMCU ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
+
+-[PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+
+-[CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+
+-[Diagrama de Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+
+-[Componentes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
+
+-[Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+
+-[Código](#) 
 
 
 
-# Funcionamiento
+
+## Intro
+
+Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías en los entrenamientos de un atleta.
+
+La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
 El sistema se basará en dos componentes:
 
@@ -46,7 +57,7 @@ Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los
 
 
 
-# Diagrama
+## Diagrama
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/diag.jpg">
@@ -54,7 +65,7 @@ Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los
 
 
 
-# Instalando nuestra tarjeta ESP8266 en Arduino
+## Instalando nuestra tarjeta ESP8266 en Arduino
 
 
 
@@ -70,7 +81,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Ahora nos vamos a Herramientas/placa: … /Gestor de Tarjetas y buscamos en el desplegable "esp8266", seleccionamos e instalamos.
 
 
-# Desgranando el ESP8266
+## Desgranando el ESP8266
 
 El ESP8266 normalmente viene integrado en un módulo. Esto es debido a que el propio SoC ESP8266 no tiene memoria Flash integrada. El primero que vio la luz fue el ESP-01 el cual estaba pensado para funcionar como interfaz WiFi de las placas de Arduino. Sin embargo, enseguida se hizo muy popular en la comunidad Maker.
 
@@ -81,7 +92,7 @@ El ESP8266 normalmente viene integrado en un módulo. Esto es debido a que el pr
 
 A partir de este módulo surgieron muchos más hasta que finalmente irrumpió en el mercado el ESP-12, el más popular de todos los módulos. Este módulo se utiliza en multitud de placas siendo las más famosas NodeMCU y Wemos.
 
-# NodeMCU ESP8266
+## NodeMCU ESP8266
 Es una plataforma de desarrollo similar a Arduino y orientada a IoT (Internet de las cosas).
 La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez está basado en el SoC Wi-Fi ESP8266, integra además el conversor **USB-Serial TTL CP2102** y conector micro-USB necesario para la programación y comunicación a PC.
 
@@ -132,7 +143,7 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
 - Arquitectura propietaria de generacion de clock "spurious free"
 - Módulos WEP, TKIP, AES y WAPI integrados
 
-# PINOUT datasheet
+## PINOUT datasheet
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP-12E-Development-Board-ESP8266-NodeMCU-Pinout.png">
@@ -169,7 +180,7 @@ I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pin
 ### - SPI
  «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
 
-# CJMCU ADXL345 acelerómetro de tres ejes
+## CJMCU ADXL345 acelerómetro de tres ejes
 
 **Modelo: CJMCU ADXL345**
 
@@ -209,7 +220,7 @@ Temperatura de operación: -40°C~85°C
 
 Dimensiones:  19x14 mm
 
-# COMPONENTES:
+## COMPONENTES:
 - Placa de desarrollo NodeMCU ESP8266.
 - Módulo Acelerómetro CJMCU ADXL345.
 - Power-Bank 5v.
@@ -217,7 +228,7 @@ Dimensiones:  19x14 mm
 - Transistor NPN 2N2222.
 - Buzzer 3-30V DC - 30mA.
 
-# CONEXIONES:
+## CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
 
 - Para configurar el modo **I2C** conectaremos **CS** del ADXL 345 a **3.3V** del NodeMCU ESP8266.
