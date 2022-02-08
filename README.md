@@ -1,4 +1,4 @@
-# TIEMPO REACCIÓN  (BORRADOR de proyecto)
+# TIEMPO REACCIÓN  (... en proyecto)
 ## SALIDAS de TACOS de ATLETAS en CARRERAS de VELOCIDAD
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
