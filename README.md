@@ -14,7 +14,7 @@
 
 - [Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
 
-- [Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
+- [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
 - [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
 
