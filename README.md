@@ -12,8 +12,6 @@
 
 -[Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
 
--[Funcionamiento](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#funcionamiento)
-
 -[Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
 
 -[Instalando nuestra tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
@@ -42,8 +40,6 @@
 Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías en los entrenamientos de un atleta.
 
 La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
-
-## Funcionamiento
 
 El sistema se basará en dos componentes:
 
