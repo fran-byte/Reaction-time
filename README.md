@@ -25,7 +25,8 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 # Funcionamiento
 
 El sistema se basará en dos componentes:
-- Placa de desarrollo **NodeMCU ESP8266**.
+- Placa de desarrollo **NodeMCU ESP8266**  
+- Placa de desarrollo [![**NodeMCU ESP8266**]](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
 - Módulo Acelerómetro **CJMCU ADXL345**.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
