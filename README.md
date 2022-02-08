@@ -8,29 +8,23 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
 
         
+## Índice 
 
-:electric_plug: [DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
+-
+-[DIAGRAMA DE CONEXIONES](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones) 
 
-:computer: [CÓDIGO](#) 
+-[CÓDIGO](#) 
 
-📕 [DOCUMENTACIÓN](/doc)
 
-## Autor ️
-<img src="mdArchives/logo.png"/> **fran-byte**
 
+
+## Intro
 
 Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías en los entrenamientos de un atleta.
 
 La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
-
-
-
-
-
-
-
-# Funcionamiento
+## Funcionamiento
 
 El sistema se basará en dos componentes:
 
