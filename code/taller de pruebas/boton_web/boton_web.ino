@@ -1,7 +1,5 @@
 /*
-  NodeMCU Access Point - Servidor Web por Dani No www.esploradores.com
-  Crea un servidor Web en modo Access Point que permite encender y apagar un LED conectado a la salida D4 (GPIO02) del módulo NodeMCU.
-  Este código de ejemplo es de público dominio.
+  Tiempo de Reacción en salida de Tacos para entrenamientos en pruebas de velocidad para Atletas
 */
 #include <SPI.h>
 #include <Wire.h>
@@ -9,23 +7,21 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
-
 #include <ESP8266WiFi.h>                  //Incluye la librería ESP8266WiFi
 
 ADXL345 adxl = ADXL345();
-unsigned long timer1 = 0;
-unsigned long timer2 = 0;
-unsigned long tiempo_desde_disparo = 0;
-
-unsigned long resultado = 0;
+unsigned long timer1 = 0;                 //Captura de tiempo de disparo
+unsigned long timer2 = 0;                 //Captura de tiempo al detectar movimiento
+unsigned long tiempo_desde_disparo = 0;   //Tiempo desde el disparo hasta invalidar una salida de entrenamiento (3 seg)
+unsigned long resultado = 0;              //TIEMPO DE REACCIÓN
 
 
 const char ssid[] = "Club-Atletismo-Leganes";   //Definimos la SSDI de nuestro servidor WiFi -nombre de red-
 const char password[] = "complejoeuropa";       //Definimos la contraseña de nuestro servidor
-WiFiServer server(80);                    //Definimos el puerto de comunicaciones
+WiFiServer server(80);                          //Definimos el puerto de comunicaciones
 
-int PinBUZZER = 2;                           //Definimos el pin de salida - GPIO2 / D4
-int estado = LOW;                         //Definimos la variable que va a recoger el estado del BUZZER
+int PinBUZZER = 2;                              //Definimos el pin de salida - GPIO2 / D4
+int estado = LOW;                               //Definimos la variable que va a recoger el estado del BUZZER
 
 void setup() {
   Serial.begin(115200);
@@ -198,7 +194,7 @@ void loop()
 
 
 
-  //Se crean botones con estilos
+  //Se crean botones GO y RESET
   client.println("<button type='button' onClick=location.href='/START=ON' style='margin:auto; background-color:green; color:#A9F5A9; padding:5px; border:2px solid black; width:200;'><h2> -- GO --</h2> </button>");
   client.println("<button type='button' onClick=location.href='/START=OFF' style='margin:auto; background-color:red; color:#F6D8CE; padding:5px; border:2px solid black; width:200;'><h2> RESET</h2> </button><br><br>");
 

@@ -11,6 +11,7 @@
 
 Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salidas de tacos en carreras en atletismo, un intento de acercamiento a los sistemas profesionales, salvando siempre las distancias. Tiene como propósito medir los tiempos de reacción y cuantificar las mejorías en el atleta.
 
+La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
 
 
@@ -24,8 +25,9 @@ Este repositorio pretende ser un proyecto de ayuda al entrenamiento de las salid
 # Funcionamiento
 
 El sistema se basará en dos componentes:
-- Placa de desarrollo **NodeMCU ESP8266**.
-- Módulo Acelerómetro **CJMCU ADXL345**.
+
+- Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
+- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
@@ -83,6 +85,7 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
 **ESPECIFICACIONES TÉCNICAS:**
 - Voltaje de Alimentación: 5V DC
 - Voltaje de Entradas/Salidas: 3.3V DC (**No usar 5V**)
+- Corriente nominal por pin: 12mA
 - Placa: NodeMCU v2 (Amica)
 - Chip conversor USB-serial: CP2102
 - SoM: ESP-12E (Ai-Thinker)
