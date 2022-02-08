@@ -1,7 +1,5 @@
 /*
-  NodeMCU Access Point - Servidor Web por Dani No www.esploradores.com
-  Crea un servidor Web en modo Access Point que permite encender y apagar un LED conectado a la salida D4 (GPIO02) del módulo NodeMCU.
-  Este código de ejemplo es de público dominio.
+  Tiempo de Reacción en salida de Tacos para entrenamientos en pruebas de velocidad para Atletas
 */
 #include <SPI.h>
 #include <Wire.h>
