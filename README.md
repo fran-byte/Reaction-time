@@ -203,9 +203,7 @@ Temperatura de operación: -40°C~85°C
 
 Dimensiones:  19x14 mm
 
-# COMPONENTES y CONEXIONES del PROYECTO
-
-## COMPONENTES:
+# COMPONENTES:
 - Placa de desarrollo NodeMCU ESP8266.
 - Módulo Acelerómetro CJMCU ADXL345.
 - Power-Bank 5v.
@@ -213,7 +211,7 @@ Dimensiones:  19x14 mm
 - Transistor NPN 2N2222.
 - Buzzer 3-30V DC - 30mA (
 
-## CONEXIONES:
+# CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
 
 - Para configurar el modo **I2C** conectaremos **CS** del ADXL 345 a **3.3V** del NodeMCU ESP8266.
