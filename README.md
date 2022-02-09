@@ -55,7 +55,7 @@ Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los
 
 ## Código
 
-``` c:::
+``` c
 /*
   Este programa pretende medir los tiempos de reacción y cuantificar las mejorías en los entrenamientos de un atleta.
   Para ello utilizaremos una Placa de desarrollo NodeMCU ESP8266 y Módulo Acelerómetro CJMCU ADXL345
