@@ -1,5 +1,7 @@
 /*
-  Tiempo de Reacción en salida de Tacos para entrenamientos en pruebas de velocidad para Atletas
+  NodeMCU Access Point - Servidor Web por Dani No www.esploradores.com
+  Crea un servidor Web en modo Access Point que permite encender y apagar un LED conectado a la salida D4 (GPIO02) del módulo NodeMCU.
+  Este código de ejemplo es de público dominio.
 */
 #include <SPI.h>
 #include <Wire.h>
@@ -7,21 +9,23 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
+
 #include <ESP8266WiFi.h>                  //Incluye la librería ESP8266WiFi
 
 ADXL345 adxl = ADXL345();
-unsigned long timer1 = 0;                 //Captura de tiempo de disparo
-unsigned long timer2 = 0;                 //Captura de tiempo al detectar movimiento
-unsigned long tiempo_desde_disparo = 0;   //Tiempo desde el disparo hasta invalidar una salida de entrenamiento (3 seg)
-unsigned long resultado = 0;              //TIEMPO DE REACCIÓN
-
+unsigned long timer1 = 0;
+unsigned long timer2 = 0;
+unsigned long tiempo_desde_disparo = 0;
+int sensibilidad = 50;
+unsigned long resultado = 0;
+String sensibilidadSTR = " MEDIA";
 
 const char ssid[] = "Club-Atletismo-Leganes";   //Definimos la SSDI de nuestro servidor WiFi -nombre de red-
 const char password[] = "complejoeuropa";       //Definimos la contraseña de nuestro servidor
-WiFiServer server(80);                          //Definimos el puerto de comunicaciones
+WiFiServer server(80);                    //Definimos el puerto de comunicaciones
 
-int PinBUZZER = 2;                              //Definimos el pin de salida - GPIO2 / D4
-int estado = LOW;                               //Definimos la variable que va a recoger el estado del BUZZER
+int PinBUZZER = 2;                           //Definimos el pin de salida - GPIO2 / D4
+int estado = LOW;                         //Definimos la variable que va a recoger el estado del BUZZER
 
 void setup() {
   Serial.begin(115200);
@@ -105,7 +109,22 @@ void loop()
 
 
   // Comprueba la petición
-  if (peticion.indexOf('/START=ON') != -1) {
+
+  if (peticion.indexOf('/START=L') != -1) {
+    sensibilidad = 90;
+    sensibilidadSTR = "<h2>Sensibilidad: BAJA</h2>";
+  }
+  if (peticion.indexOf('/START=M') != -1) {
+    sensibilidad = 50;
+    sensibilidadSTR = "<h2>Sensibilidad: MEDIA</h2>";
+  }
+  if (peticion.indexOf('/START=H') != -1) {
+    sensibilidad = 20;
+    sensibilidadSTR = "<h2>Sensibilidad: ALTA</h2>";
+  }
+
+
+  if (peticion.indexOf('/START=O') != -1) { // DISPARO = OK
 
     estado = HIGH;
     digitalWrite(PinBUZZER, estado);    //Enciende BUZZER ( DISPARO !!! )
@@ -118,7 +137,7 @@ void loop()
     while (true)//  ******************** Realizar este bucle mientras NO tengamos Accelearación en el EJE de las X  ************
     {
       x1 = medX();
-      if ((x1 - x) > 50 || (x1 - x) < -50) {  //********************  Accelearación +-50 en el EJE de las X  ************
+      if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //********************  Accelearación +-50 en el EJE de las X  ************
         x1 = medX();
         timer2 = millis();
         resultado = timer2 - timer1;
@@ -135,7 +154,7 @@ void loop()
       }
       else
       {
-        tiempo_desde_disparo = millis(); 
+        tiempo_desde_disparo = millis();
         if ((tiempo_desde_disparo - timer1) > 3000) {  //Apagamos el buzzer 3 segundos despues del disparo y mandamos SALIDA: "SIN SALIDA"
           digitalWrite(PinBUZZER, LOW);
           salida = "<h2 style='color:orange'>- NO HUBO SALIDA -</h2>";
@@ -148,7 +167,7 @@ void loop()
 
   }
 
-  if (peticion.indexOf('/START=OFF') != -1) {
+  if (peticion.indexOf('START=F') != -1) {  // RESET
     estado = LOW;
     x = 0;
     x1 = 0;
@@ -156,8 +175,9 @@ void loop()
     resultado = 0;
     timer1 = 0;
     timer2 = 0;
-    String salida = "<h2>**************</h2>";
+    String salida = "<h2>*******-******</h2>";
   }
+
 
 
   digitalWrite(PinBUZZER, estado);    //Enciende o apaga el BUZZER en función de la petición
@@ -194,9 +214,20 @@ void loop()
 
 
 
-  //Se crean botones GO y RESET
-  client.println("<button type='button' onClick=location.href='/START=ON' style='margin:auto; background-color:green; color:#A9F5A9; padding:5px; border:2px solid black; width:200;'><h2> -- GO --</h2> </button>");
-  client.println("<button type='button' onClick=location.href='/START=OFF' style='margin:auto; background-color:red; color:#F6D8CE; padding:5px; border:2px solid black; width:200;'><h2> RESET</h2> </button><br><br>");
+  //Se crean botones con estilos
+  client.println("<button type='button' onClick=location.href='START=O' style='margin:auto; background-color:green; color:#A9F5A9; padding:5px; border:2px solid black; width:200;'><h2> -- GO --</h2> </button>");
+  client.println("<button type='button' onClick=location.href='START=F' style='margin:auto; background-color:red; color:#F6D8CE; padding:5px; border:2px solid black; width:200;'><h2> RESET</h2> </button><br><br>");
+
+
+
+  //Se crean botones para modificar la sensibilidad del Acelerómetro
+
+  client.println(sensibilidadSTR);
+
+
+  client.println("<button type='button' onClick=location.href='/START=L'> Sens BAJA </button>");
+  client.println("<button type='button' onClick=location.href='/START=M'> Sens MEDIA </button>");
+  client.println("<button type='button' onClick=location.href='/START=H'> Sens ALTA </button><br><br>");
 
 
   client.println("</center></font></body></html>");
