@@ -26,7 +26,7 @@
 
 - [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
 
-- [Código](#) 
+- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion) 
 
 
 
