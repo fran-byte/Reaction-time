@@ -1,4 +1,4 @@
-# TIEMPO DE REACCIÓN  (... en proyecto)
+# TIEMPO DE REACCIÓN
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
 <p align="center">
