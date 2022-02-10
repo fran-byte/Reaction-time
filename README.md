@@ -206,7 +206,7 @@ Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el 
 - Placa de desarrollo NodeMCU ESP8266.
 - Módulo Acelerómetro CJMCU ADXL345.
 - Power-Bank 5v.
-- Resistenvia de 22 Ohmios.
+- Resistenvia de 1KΩ.
 - Transistor NPN 2N2222.
 - Buzzer 3-30V DC - 30mA.
 
