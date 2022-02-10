@@ -248,7 +248,7 @@ unsigned long tiempo_desde_disparo = 0;
 int sensibilidad = 50;
 unsigned long resultado = 0;
 String sensibilidadSTR = " MEDIA";
-int PinBUZZER = 2;                              //Definimos el pin de salida - GPIO2 / D4
+int PinBUZZER = 15;                              //Definimos el pin de salida - GPIO2 / D4
 
 const char ssid[] = "Club-Atletismo-Leganes";   //Definimos la SSDI de nuestro servidor WiFi -nombre de red-
 const char password[] = "complejoeuropa";       //Definimos la contraseña de nuestro servidor
@@ -279,17 +279,21 @@ void setup() {
 
 }
 
-
+void beep() {
+  digitalWrite(PinBUZZER, HIGH);
+  delay(50);
+  digitalWrite(PinBUZZER, LOW);
+}
 int medX() {                                    // Función que devuelve una muestra pònderada de 10 medidas del eje X
 
   int x, y, z;
   int mX = 0;
 
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 25; i++) {
     adxl.readAccel(&x, &y, &z);
     mX = mX + x;
   }
-  mX = mX / 10;
+  mX = mX / 25;
   return mX;
 }
 
@@ -302,7 +306,7 @@ void loop()
   }
 
   Serial.println("nuevo cliente");                      // Espera hasta que el cliente envía alguna petición
-  
+
   while (!client.available()) {
     delay(1);
   }
@@ -317,20 +321,23 @@ void loop()
   String salida = "<h2>**************</h2>";
 
 
-  if (peticion.indexOf('/START=L') != -1) {               // Comprueba la petición de sensibilidad
-    sensibilidad = 90;
-    sensibilidadSTR = "<h2>Sensibilidad: BAJA</h2>";
+  if (peticion.indexOf('/START=L') == 11) {               // Comprueba la petición de sensibilidad
+    sensibilidad = 70;
+    sensibilidadSTR = "<h2 style='color:green'>Sensibilidad: BAJA</h2>";
+    beep();
   }
   if (peticion.indexOf('/START=M') == 11) {
-    sensibilidad = 50;
-    sensibilidadSTR = "<h2>Sensibilidad: MEDIA</h2>";
+    sensibilidad = 40;
+    sensibilidadSTR = "<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
+    beep();
   }
   if (peticion.indexOf('/START=H') == 11) {
-    sensibilidad = 20;
-    sensibilidadSTR = "<h2>Sensibilidad: ALTA</h2>";
+    sensibilidad = 28;
+    sensibilidadSTR = "<h2 style='color:red'>Sensibilidad: ALTA</h2>";
+    beep();
   }
 
-  if (peticion.indexOf('/START=O') == 11) {                // Comprueba la petición de DISPARO
+  if (peticion.indexOf('/START=O') != -1) {                // Comprueba la petición de DISPARO
 
     digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
     timer1 = millis();
@@ -352,6 +359,7 @@ void loop()
         else {
           salida = "<h2 style='color:green'>* SALIDA CORRECTA *</h2>";
         }
+        digitalWrite(PinBUZZER, LOW);
         break;
       }
       else
@@ -359,7 +367,8 @@ void loop()
         tiempo_desde_disparo = millis();
         if ((tiempo_desde_disparo - timer1) > 3000) {  // **********  Apagamos el buzzer 3 segundos después del disparo y colocamos el mensaje "SIN SALIDA"
           digitalWrite(PinBUZZER, LOW);
-          salida = "<h2 style='color:orange'>- NO HUBO SALIDA -</h2>";
+          salida = "<h2 style='color:pink'>- NO HUBO SALIDA -</h2>";
+          resultado = 0;
           break;
         }
       }
@@ -372,6 +381,7 @@ void loop()
     resultado = 0;
     timer1 = 0;
     timer2 = 0;
+    digitalWrite(PinBUZZER, LOW);
     String salida = "<h2>*******-******</h2>";
   }
 
@@ -390,7 +400,6 @@ void loop()
   client.println("<center><h1 style='color:orange'>LEGANES</h1>");
 
   client.println("<h2>Tiempos de Reacción</h2>");
-  client.println("<p>- Salida de Tacos -</p>");
   client.println("<p><100ms: SALIDA NULA</p>");
 
   //client.println(x);
