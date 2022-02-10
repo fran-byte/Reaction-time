@@ -320,16 +320,16 @@ void loop()
     sensibilidad = 90;
     sensibilidadSTR = "<h2>Sensibilidad: BAJA</h2>";
   }
-  if (peticion.indexOf('/START=M') != -1) {
+  if (peticion.indexOf('/START=M') == 11) {
     sensibilidad = 50;
     sensibilidadSTR = "<h2>Sensibilidad: MEDIA</h2>";
   }
-  if (peticion.indexOf('/START=H') != -1) {
+  if (peticion.indexOf('/START=H') == 11) {
     sensibilidad = 20;
     sensibilidadSTR = "<h2>Sensibilidad: ALTA</h2>";
   }
 
-  if (peticion.indexOf('/START=O') != -1) {                // Comprueba la petición de DISPARO
+  if (peticion.indexOf('/START=O') == 11) {                // Comprueba la petición de DISPARO
 
     digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
     timer1 = millis();
