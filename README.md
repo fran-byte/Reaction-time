@@ -422,7 +422,7 @@ void loop()
 ```
 ## BETA
 
-- Foto del prototipo aún en una protoboard.
+- Foto del prototipo aún en una protoboard, Pendiente de realizar circuito y mecanizar.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
