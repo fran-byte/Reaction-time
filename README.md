@@ -425,9 +425,7 @@ void loop()
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
 </p>
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/appWeb.jpg">
-</p>
+
 
 
 ## Licencia
