@@ -12,8 +12,6 @@
 
 - [Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
 
-- [Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
-
 - [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
 - [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
@@ -24,8 +22,9 @@
 
 - [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
 
-- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion) 
+- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
+- [BETA](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
 
 
@@ -42,8 +41,8 @@ El sistema se basará en dos componentes:
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
-Básicamente consistirá en un disparo simulado situado en una app en un móvil, dando paso a una cuenta en milisegundos.
-Esta cuenta o timer será interrumpida por el movimiento (generado en uno de los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
+Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
+Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/modulo-esp8266-esp&ADXL335jpg.jpg">
@@ -419,7 +418,13 @@ void loop()
   Serial.println("Petición finalizada");          // Se finaliza la petición al cliente. Se inicaliza la espera de una nueva petición.
 }
 ```
-
+## BETA
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
+</p>
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/appWeb.jpg">
+</p>
 
 
 ## Licencia
