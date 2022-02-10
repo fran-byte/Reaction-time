@@ -3,8 +3,7 @@
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
-</p>
-<p align="center">
+
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
 </p>
 
