@@ -422,6 +422,9 @@ void loop()
 }
 ```
 ## BETA
+
+- Foto del prototipo aún en una protoboard.
+
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
 </p>
