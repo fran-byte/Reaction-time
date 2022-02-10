@@ -134,7 +134,7 @@ void loop()
         tiempo_desde_disparo = millis();
         if ((tiempo_desde_disparo - timer1) > 3000) {  // **********  Apagamos el buzzer 3 segundos después del disparo y colocamos el mensaje "SIN SALIDA"
           digitalWrite(PinBUZZER, LOW);
-          salida = "<h2 style='color:orange'>- NO HUBO SALIDA -</h2>";
+          salida = "<h2 style='color:pink'>- NO HUBO SALIDA -</h2>";
           resultado = 0;
           break;
         }
