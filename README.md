@@ -32,7 +32,7 @@
 
 ## Intro
 
-Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías en los entrenamientos de un atleta.
+Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías de explosividad en los entrenamientos de un atleta.
 
 La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
