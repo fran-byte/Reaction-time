@@ -12,8 +12,6 @@
 
 - [Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
 
-- [Diagrama de Flujo](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#diagrama)
-
 - [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
 - [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
@@ -24,8 +22,9 @@
 
 - [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
 
-- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion) 
+- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
+- [BETA](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
 
 
@@ -419,7 +418,13 @@ void loop()
   Serial.println("Petición finalizada");          // Se finaliza la petición al cliente. Se inicaliza la espera de una nueva petición.
 }
 ```
-
+## BETA
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
+</p>
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/appWeb.jpg">
+</p>
 
 
 ## Licencia
