@@ -36,7 +36,7 @@ Este repositorio pretende medir los tiempos de reacción y cuantificar las mejor
 
 La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
-El dispositivo alimentado con un simple power-bank USB de 5v estará situado en los tacos de salida y estrá basado en dos componentes:
+El dispositivo alimentado con un simple power-bank USB de 5v estará situado en los tacos de salida y estará basado en dos componentes:
 
 - Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
 - Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
