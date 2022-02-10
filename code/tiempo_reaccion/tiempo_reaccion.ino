@@ -89,7 +89,7 @@ void loop()
 
 
   if (peticion.indexOf('/START=L') == 11) {               // Comprueba la petición de sensibilidad
-    sensibilidad = 100;
+    sensibilidad = 70;
     sensibilidadSTR = "<h2 style='color:green'>Sensibilidad: BAJA</h2>";
     beep();
   }
