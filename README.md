@@ -248,7 +248,7 @@ unsigned long tiempo_desde_disparo = 0;
 int sensibilidad = 50;
 unsigned long resultado = 0;
 String sensibilidadSTR = " MEDIA";
-int PinBUZZER = 15;                              //Definimos el pin de salida - GPIO2 / D4
+int PinBUZZER = 15;                              //Definimos el pin de salida - GPIO15 / D8
 
 const char ssid[] = "Club-Atletismo-Leganes";   //Definimos la SSDI de nuestro servidor WiFi -nombre de red-
 const char password[] = "complejoeuropa";       //Definimos la contraseña de nuestro servidor
