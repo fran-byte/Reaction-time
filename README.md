@@ -208,7 +208,7 @@ Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el 
 - Power-Bank 5v.
 - Resistenvia de 1KΩ.
 - Transistor NPN 2N2222.
-- Buzzer 3-30V DC - 30mA.
+- Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 
 ## CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
