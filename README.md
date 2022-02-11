@@ -86,7 +86,7 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
 
 
 **ESPECIFICACIONES TÉCNICAS:**
-- Voltaje de Alimentación: Tensión de alimentación: 4.5V~9V (10VMAX) y/o alimentación por USB
+- Voltaje de Alimentación: 4.5V~9V (10VMAX) y/o alimentación por USB
 - Voltaje de Entradas/Salidas: 3.3V DC (**No usar 5V**)
 - Corriente nominal por pin: 12mA
 - Placa: NodeMCU v2 (Amica)
