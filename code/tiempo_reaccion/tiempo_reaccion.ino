@@ -15,7 +15,8 @@ unsigned long tiempo_desde_disparo = 0;
 int sensibilidad = 50;
 unsigned long resultado = 0;
 String sensibilidadSTR = " MEDIA";
-int PinBUZZER = 15;                              //Definimos el pin de salida - GPIO15 / D8
+String color = "yellow";
+int PinBUZZER = 15;                              //Definimos el pin de salida del Buzzer - GPIO15 / D8
 
 const char ssid[] = "Club-Atletismo-Leganes";   //Definimos la SSDI de nuestro servidor WiFi -nombre de red-
 const char password[] = "complejoeuropa";       //Definimos la contraseña de nuestro servidor
@@ -24,9 +25,9 @@ WiFiServer server(80);                          //TCPservidor en el puerto 80
 // -------------------------------------------------------------------------------------------------------------
 void setup() {
 
-  Serial.begin(115200);
-  Serial.println("Iniciar");
-  Serial.println();
+  //Serial.begin(115200);
+  //Serial.println("Iniciar");
+  //Serial.println();
 
   adxl.powerOn();                               // Power on the ADXL345
   adxl.setRangeSetting(2);                      // Definir el rango del Acelerómetro, valor en 2g
@@ -38,11 +39,11 @@ void setup() {
   WiFi.mode(WIFI_AP);
   WiFi.softAP(ssid, password);                  // Red con clave, en el canal 1 y visible
 
-  Serial.println();
-  Serial.print("Direccion IP Access Point - por defecto: ");      //Imprime la dirección IP
-  Serial.println(WiFi.softAPIP());
-  Serial.print("Direccion MAC Access Point: ");                   //Imprime la dirección MAC
-  Serial.println(WiFi.softAPmacAddress());
+  //Serial.println();
+  //Serial.print("Direccion IP Access Point - por defecto: ");      //Imprime la dirección IP
+  //Serial.println(WiFi.softAPIP());
+  //Serial.print("Direccion MAC Access Point: ");                   //Imprime la dirección MAC
+  //Serial.println(WiFi.softAPmacAddress());
 
 }
 
@@ -72,16 +73,16 @@ void loop()
     return;
   }
 
-  Serial.println("nuevo cliente");                      // Espera hasta que el cliente envía alguna petición
+  //Serial.println("nuevo cliente");                      // Espera hasta que el cliente envía alguna petición
 
   while (!client.available()) {
     delay(1);
   }
 
-  Serial.printf("Clientes conectados al Access Point: %dn", WiFi.softAPgetStationNum());   // Imprime el número de clientes conectados
+  //Serial.printf("Clientes conectados al Access Point: %dn", WiFi.softAPgetStationNum());   // Imprime el número de clientes conectados
 
   String peticion = client.readStringUntil('r');          // Lee la petición
-  Serial.println(peticion);
+  //Serial.println(peticion);
   client.flush();
 
   int x, y, z, x1;
@@ -105,26 +106,30 @@ void loop()
   }
 
   if (peticion.indexOf('/START=O') != -1) {                // Comprueba la petición de DISPARO
-
-    digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
     timer1 = millis();
+    digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
     x = medX();
 
-
-    // x=x-Xcal;
 
     while (true)                                           //Realizar este bucle mientras NO tengamos(una mínima) Accelearación en el EJE de las X
     {
       x1 = medX();
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
-        x1 = medX();
         timer2 = millis();
+        x1 = medX();
         resultado = timer2 - timer1;
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
+          for (int i = 0; i < 10; i++) {
+            beep();
+            delay(50);
+            color = "red";
+          }
         }
         else {
           salida = "<h2 style='color:green'>* SALIDA CORRECTA *</h2>";
+          color = "yellow";
+
         }
         digitalWrite(PinBUZZER, LOW);
         break;
@@ -143,6 +148,8 @@ void loop()
   }
 
   if (peticion.indexOf('START=F') != -1) {  // RESET valores
+    beep();
+    color = "yellow";
     x = 0;
     x1 = 0;
     resultado = 0;
@@ -163,8 +170,8 @@ void loop()
   client.println("<body style='background-color:black;'>");   // Web Page Heading
   client.println("<font color='grey'>");
 
-  client.println("<center><h1 style='color:orange'>CLUB ATLETISMO</h1>");
-  client.println("<center><h1 style='color:orange'>LEGANES</h1>");
+  client.println("<center><h1 style='color:#FF7F00'>CLUB ATLETISMO</h1>");
+  client.println("<center><h1 style='color:#FF7F00'>LEGANES</h1>");
 
   client.println("<h2>Tiempos de Reacción</h2>");
   client.println("<p><100ms: SALIDA NULA</p>");
@@ -172,7 +179,10 @@ void loop()
   //client.println(x);
   client.println("<br><br>");
 
-  client.println("<h1 style='color:yellow'>");
+  client.print("<h1 style='color:");
+  client.print(color);
+  client.println("'>");
+
   client.print(resultado);                           // Mostramos el resultado, es decir el TR (Tiempo de reacción)
   client.println(" ms</h1>");
   client.println("<br><br>");
@@ -193,5 +203,5 @@ void loop()
 
   client.println("</center></font></body></html>");
   delay(1);
-  Serial.println("Petición finalizada");          // Se finaliza la petición al cliente. Se inicaliza la espera de una nueva petición.
+  //Serial.println("Petición finalizada");          // Se finaliza la petición al cliente. Se inicaliza la espera de una nueva petición.
 }
