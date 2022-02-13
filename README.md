@@ -5,7 +5,6 @@
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
   
-   ["https://www.youtube.com/embed/0nLaTIaZ6vY"](<img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/maxresdefault.jpg">) 
   
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
 </p>
