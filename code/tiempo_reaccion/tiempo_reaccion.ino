@@ -157,7 +157,7 @@ void loop()
     timer1 = 0;
     timer2 = 0;
     digitalWrite(PinBUZZER, LOW);
-    
+
   }
 
   // *******************************************************    Envía la página HTML de respuesta al cliente
