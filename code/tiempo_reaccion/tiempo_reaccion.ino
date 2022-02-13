@@ -14,7 +14,7 @@ unsigned long timer2 = 0;
 unsigned long tiempo_desde_disparo = 0;
 int sensibilidad = 50;
 unsigned long resultado = 0;
-String sensibilidadSTR = " MEDIA";
+String sensibilidadSTR = "<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
 String color = "yellow";
 int PinBUZZER = 15;                              //Definimos el pin de salida del Buzzer - GPIO15 / D8
 
@@ -86,7 +86,7 @@ void loop()
   client.flush();
 
   int x, y, z, x1;
-  String salida = "<h2>**************</h2>";
+  String salida = "<h2>- - - -</h2>";
 
 
   if (peticion.indexOf('/START=L') == 11) {               // Comprueba la petición de sensibilidad
@@ -150,13 +150,14 @@ void loop()
   if (peticion.indexOf('START=F') != -1) {  // RESET valores
     beep();
     color = "yellow";
+    sensibilidadSTR = "<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
     x = 0;
     x1 = 0;
     resultado = 0;
     timer1 = 0;
     timer2 = 0;
     digitalWrite(PinBUZZER, LOW);
-    String salida = "<h2>*******-******</h2>";
+    
   }
 
   // *******************************************************    Envía la página HTML de respuesta al cliente
@@ -166,12 +167,11 @@ void loop()
   client.println("<meta charset='UTF-8'>");
   client.println("<meta name='MobileOptimized' content='width' />");
   client.println("<html>");
-
-  client.println("<body style='background-color:black;'>");   // Web Page Heading
+  client.println("<body style='background-color:black; border: 1px solid; color: #FF7F00;'>");   // Web Page Heading
   client.println("<font color='grey'>");
 
-  client.println("<center><h1 style='color:#FF7F00'>CLUB ATLETISMO</h1>");
-  client.println("<center><h1 style='color:#FF7F00'>LEGANES</h1>");
+  client.println("<center><h2 style='color:#FF7F00'>CLUB ATLETISMO LEGANES</h2>");
+  //client.println("<center><h2 style='color:#FF7F00'></h2>");
 
   client.println("<h2>Tiempos de Reacción</h2>");
   client.println("<p><100ms: SALIDA NULA</p>");
