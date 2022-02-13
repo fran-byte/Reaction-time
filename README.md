@@ -4,7 +4,9 @@
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Marc_Raquil.jpg">
   
-   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/maxresdefault.jpg">(https://www.youtube.com/embed/0nLaTIaZ6vY) 
+  [![Alt text](https://img.youtube.com/vi/configuroweb/0.jpg)](https://www.youtube.com/embed/0nLaTIaZ6vY)
+  
+   
   
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
 </p>
