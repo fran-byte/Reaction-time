@@ -1,7 +1,6 @@
 # TIEMPO DE REACCIÓN
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
-<center>
  
  [![Alt text](https://img.youtube.com/vi/0nLaTIaZ6vY/0.jpg)](https://www.youtube.com/watch?v=0nLaTIaZ6vY)
  
@@ -12,7 +11,7 @@
  
  </p>
 
-</center>
+
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
 
