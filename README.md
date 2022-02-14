@@ -30,7 +30,7 @@
 
 - [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
-- [BETA](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
+- [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
 
 
 
