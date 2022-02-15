@@ -51,7 +51,7 @@ Básicamente consistirá en un disparo simulado situado en una app/web en un mó
 Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/modulo-esp8266-esp&ADXL335jpg.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266-esp&ADXL335jpg.jpg">
 </p>
 
 
@@ -77,6 +77,10 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Resistenvia de 1KΩ.
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/componentes.jpg">
+</p>
 
 ## CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
