@@ -33,6 +33,9 @@
 - [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
 
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
+</p>
 
 ## Intro
 
