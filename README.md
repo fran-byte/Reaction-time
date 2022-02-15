@@ -1,4 +1,4 @@
-# TIEMPO DE REACCIÓN
+# TIEMPO DE REACCIÓN (En Proceso...)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
  
