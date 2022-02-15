@@ -92,7 +92,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - PIN **D2** (SCL) del NodeMCU ESP8266 al PIN **SCL** del acelerómetro. 
 - PIN **D1** (SDA) del NodeMCU ESP8266 al PIN **SDA** del acelerómetro.
 - PIN **GND** del NodeMCU ESP8266 al PIN **GND** del sensor del acelerómetro.
-- Conectaremos el Buzzer a través de un Opto para evitar interferencias.
+- Conectaremos el Buzzer a través de un Optoacoplador para evitar interferencias.
  
 
 <p align="center">
