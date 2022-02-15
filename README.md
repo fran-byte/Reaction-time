@@ -209,7 +209,7 @@ Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el 
 ## COMPONENTES:
 - Placa de desarrollo NodeMCU ESP8266.
 - Módulo Acelerómetro CJMCU ADXL345.
-- Batería 7.4v.
+- Batería 8.2v. (Reciclada batería de bicicleta) **Recordar** que Vin = 4.5V~9V (10VMAX)
 - Resistenvia de 1KΩ.
 - Transistor NPN 2N2222.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
@@ -221,15 +221,15 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - PIN **D2** (SCL) del NodeMCU ESP8266 al PIN **SCL** del acelerómetro. 
 - PIN **D1** (SDA) del NodeMCU ESP8266 al PIN **SDA** del acelerómetro.
 - PIN **GND** del NodeMCU ESP8266 al PIN **GND** del sensor del acelerómetro.
-- **Batería** de **7.4v** a entrada **Vin** del NodeMCU ESP8266.
+- **Batería** de **8.2v** a entrada **Vin** del NodeMCU ESP8266.
 - PIN **3.3V** del NodeMCU a **3.3V** del sensor del acelerómetro ADXL-345.
 - PIN **D8 (GPIO15)** del NodeMCU ESP8266 a **Resistencia de **1 KΩ** y esta a la **Base** del transistor 2N2222.
 - **Emisor** del transistor 2N2222 a **GND**.
 - **Colector** del transistor 2N2222 a **Negativo del Buzzer**
-- **Positivo del Buzzer** a **Vin** del NodeMCU ESP8266 **(+7.4V)**
+- **Positivo del Buzzer** a **Vin** del NodeMCU ESP8266 **(+8.2V)**
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/circuit.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conectividad.jpg">
 </p>
 
 ## Código
