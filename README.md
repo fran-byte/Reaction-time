@@ -78,6 +78,10 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/componentes.jpg">
+</p>
+
 ## CONEXIONES:
 Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizando una conexión **I2C**:
 
