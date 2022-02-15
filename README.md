@@ -211,7 +211,7 @@ Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el 
 - Módulo Acelerómetro CJMCU ADXL345.
 - Batería 8.2v. (Reciclada batería de bicicleta) **Recordar** que Vin = 4.5V~9V (10VMAX)
 - Resistenvia de 1KΩ.
-- Transistor NPN 2N2222.
+- Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 
 ## CONEXIONES:
