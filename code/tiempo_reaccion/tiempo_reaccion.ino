@@ -9,6 +9,7 @@
 #include <ESP8266WebServer.h> // Biblioteca se utiliza para simplificar la creación de un servidor web.
 
 ADXL345 adxl = ADXL345();
+unsigned long timer0 = 0;
 unsigned long timer1 = 0;
 unsigned long timer2 = 0;
 unsigned long tiempo_desde_disparo = 0;
@@ -105,10 +106,37 @@ void loop()
     beep();
   }
 
+
+
+  //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
   if (peticion.indexOf('/START=O') != -1) {                // Comprueba la petición de DISPARO
-    timer1 = millis();
-    digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
+
+    
     x = medX();
+    for (int i = 0; i < 40; i++) {
+      x1 = medX();
+      if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
+        salida = "<h2 style='color:red'>* NULO - PRE-DISPARO *</h2>";
+        for (int i = 0; i < 10; i++) {
+          beep();
+          delay(50);
+          color = "red";
+          resultado = 0;
+        }
+        goto salto;
+      }
+    }
+
+
+    x = medX();
+    digitalWrite(PinBUZZER, HIGH);                         //  Activamos el BUZZER ( DISPARO !!! )
+    timer1 = millis();
 
 
     while (true)                                           //Realizar este bucle mientras NO tengamos(una mínima) Accelearación en el EJE de las X
@@ -116,7 +144,7 @@ void loop()
       x1 = medX();
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         timer2 = millis();
-        x1 = medX();
+
         resultado = timer2 - timer1;
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
@@ -146,6 +174,15 @@ void loop()
       }
     }
   }
+
+salto:
+
+
+
+
+  //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
   if (peticion.indexOf('START=F') != -1) {  // RESET valores
     beep();
