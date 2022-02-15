@@ -93,7 +93,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
  
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conectividad.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conectividades.jpg">
 </p>
 
 ## Código
