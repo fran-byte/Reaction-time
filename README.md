@@ -73,7 +73,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ## COMPONENTES:
 - Placa de desarrollo NodeMCU ESP8266.
 - Módulo Acelerómetro CJMCU ADXL345.
-- Batería 8.2v. (Use una batería de un foco de bicicleta) **Recordar** podéis usar tensiones de Vin = 4.5V~9V (10VMAX)
+- Batería 8.4v. (Use una batería de un foco de bicicleta) **Recordar** podéis usar tensiones de Vin = 4.5V~9V (10VMAX)
 - Resistenvia de 1KΩ.
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
@@ -93,7 +93,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
  
 
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conectividad.jpg">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/conectividades.jpg">
 </p>
 
 ## Código
