@@ -148,7 +148,7 @@ void loop()
     {
       //pto1=millis();
       x1 = medX(); //  30ms  demoras en subrutina
-                   // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos la mitad 30ms sando un margen de error de +-30ms
+                   // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos en la mitad (30ms) dando un margen de error de +-15ms
       
       
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
