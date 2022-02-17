@@ -11,11 +11,7 @@
  
  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
  
-  
-  <p align="center">
- 
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
-</p>
+
 
 
 
@@ -57,6 +53,12 @@ El dispositivo alimentado con una bateria de 8,4V recargable estará situado en 
 - Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
+
+  
+  <p align="center">
+ 
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
+</p>
 
 Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
 Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
