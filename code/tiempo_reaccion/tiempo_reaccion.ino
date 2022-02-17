@@ -155,7 +155,7 @@ void loop()
         timer2 = millis();
         //resta_pto = timer2-pto1;
 
-        resultado = timer2 - timer1 + 15;  // Añadimos 30ms por demoras en instrucciones de programación
+        resultado = timer2 - timer1 + 15;  // Añadimos 15ms por demoras 
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
           for (int i = 0; i < 10; i++) {
