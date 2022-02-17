@@ -61,8 +61,10 @@ Utilizaremos el IDE de Arduino para programar el ESP8266.
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
 </p>
 
-Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
+- Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
 Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
+
+- Para este prototipo únicamente utilizaremos la aceleración producida en el eje de las X.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266-esp&ADXL335jpg.jpg">
