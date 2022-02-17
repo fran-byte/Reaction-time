@@ -1,11 +1,11 @@
-# TIEMPO DE REACCIÓN (En Proceso...)
+# TIEMPO DE REACCIÓN (T.R.) (En Proceso...)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
  
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
 
- ## T.R. TOKIO 2021
+ ## T.R. en TOKIO 2021
  
  - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
  
