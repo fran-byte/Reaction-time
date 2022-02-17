@@ -9,6 +9,10 @@
 #include <ESP8266WebServer.h> // Biblioteca se utiliza para simplificar la creación de un servidor web.
 
 ADXL345 adxl = ADXL345();
+unsigned long pto1 = 0;
+
+unsigned long resta_pto=0;
+
 unsigned long timer0 = 0;
 unsigned long timer1 = 0;
 unsigned long timer2 = 0;
@@ -121,6 +125,7 @@ void loop()
     x = medX();
     for (int i = 0; i < 40; i++) {
       x1 = medX();
+      
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         salida = "<h2 style='color:red'>* NULO - PRE-DISPARO *</h2>";
         for (int i = 0; i < 10; i++) {
@@ -141,11 +146,15 @@ void loop()
 
     while (true)                                           //Realizar este bucle mientras NO tengamos(una mínima) Accelearación en el EJE de las X
     {
+      //pto1=millis();
       x1 = medX();
+      
+      
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         timer2 = millis();
+        //resta_pto = timer2-pto1;
 
-        resultado = timer2 - timer1;
+        resultado = timer2 - timer1 + 30;  // Añadimos 30ms por demoras en instrucciones de programación
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
           for (int i = 0; i < 10; i++) {
@@ -213,7 +222,7 @@ salto:
   client.println("<h2>Tiempos de Reacción</h2>");
   client.println("<p><100ms: SALIDA NULA</p>");
 
-  //client.println(x);
+  client.println(resta_pto);
   client.println("<br><br>");
 
   client.print("<h1 style='color:");
