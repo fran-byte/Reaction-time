@@ -3,12 +3,17 @@
 
  
 <p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
 
  ## T.R. TOKIO 2021
- <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
+ 
  - Se podría considerar un tiempo normal < 200ms, bueno <175 y excelente < 145.
+ - 
+ <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
+ 
   
+  <p align="center">
+ 
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
 </p>
 
