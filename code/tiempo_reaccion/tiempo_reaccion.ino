@@ -147,7 +147,7 @@ void loop()
     while (true)                                           //Realizar este bucle mientras NO tengamos(una mínima) Accelearación en el EJE de las X
     {
       //pto1=millis();
-      x1 = medX(); //  30ms  demoras en instrucción de la subrutina
+      x1 = medX(); //  30ms  demoras en subrutina
                    // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos la mitad 30ms sando un margen de error de +-30ms
       
       
