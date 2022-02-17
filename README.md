@@ -7,8 +7,8 @@
 
  ## T.R. TOKIO 2021
  
- - Se podría considerar un tiempo normal < 200ms, bueno <175 y excelente < 145.
- - 
+ - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
+ 
  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
  
   
