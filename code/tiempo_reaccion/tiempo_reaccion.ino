@@ -147,14 +147,15 @@ void loop()
     while (true)                                           //Realizar este bucle mientras NO tengamos(una mínima) Accelearación en el EJE de las X
     {
       //pto1=millis();
-      x1 = medX();
+      x1 = medX(); //  30ms  demoras en instrucción de la subrutina
+                   // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos la mitad 30ms sando un margen de error de +-30ms
       
       
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         timer2 = millis();
         //resta_pto = timer2-pto1;
 
-        resultado = timer2 - timer1 + 30;  // Añadimos 30ms por demoras en instrucciones de programación
+        resultado = timer2 - timer1 + 15;  // Añadimos 30ms por demoras en instrucciones de programación
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
           for (int i = 0; i < 10; i++) {
