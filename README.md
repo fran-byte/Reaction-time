@@ -94,7 +94,13 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 <span style="color:red">*IMPORTANTE: El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO*, causa falsas Salidas, ya que la vibración activa el sensor</span>
 
