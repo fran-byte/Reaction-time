@@ -225,7 +225,7 @@ salto:
   client.println("<h2>Tiempos de Reacción</h2>");
   client.println("<p><100ms: SALIDA NULA</p>");
 
-  client.println(resta_pto);
+  //client.println(resta_pto);
   client.println("<br><br>");
 
   client.print("<h1 style='color:");
