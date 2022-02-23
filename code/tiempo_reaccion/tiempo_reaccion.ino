@@ -17,7 +17,7 @@ unsigned long timer0 = 0;
 unsigned long timer1 = 0;
 unsigned long timer2 = 0;
 unsigned long tiempo_desde_disparo = 0;
-int sensibilidad = 50;
+int sensibilidad = 35;
 unsigned long resultado = 0;
 String sensibilidadSTR = "<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
 String color = "yellow";
@@ -57,16 +57,16 @@ void beep() {
   delay(50);
   digitalWrite(PinBUZZER, LOW);
 }
-int medX() {                                    // Función que devuelve una muestra pònderada de 10 medidas del eje X
+int medX() {                                    // Función que devuelve una muestra pònderada de 20 medidas del eje X
 
   int x, y, z;
   int mX = 0;
 
-  for (int i = 0; i < 25; i++) {
+  for (int i = 0; i < 20; i++) {
     adxl.readAccel(&x, &y, &z);
     mX = mX + x;
   }
-  mX = mX / 25;
+  mX = mX / 20;
   return mX;
 }
 
@@ -95,17 +95,17 @@ void loop()
 
 
   if (peticion.indexOf('/START=L') == 11) {               // Comprueba la petición de sensibilidad
-    sensibilidad = 70;
+    sensibilidad = 50;
     sensibilidadSTR = "<h2 style='color:green'>Sensibilidad: BAJA</h2>";
     beep();
   }
   if (peticion.indexOf('/START=M') == 11) {
-    sensibilidad = 40;
+    sensibilidad = 35;
     sensibilidadSTR = "<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
     beep();
   }
   if (peticion.indexOf('/START=H') == 11) {
-    sensibilidad = 28;
+    sensibilidad = 20;
     sensibilidadSTR = "<h2 style='color:red'>Sensibilidad: ALTA</h2>";
     beep();
   }
@@ -155,9 +155,10 @@ void loop()
         timer2 = millis();
         //resta_pto = timer2-pto1;
 
-        resultado = timer2 - timer1 + 15;  // Añadimos 15ms por demoras 
+        resultado = timer2 - timer1 + 12;  // Añadimos 12ms por demoras 
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
+          delay(500);// dejamos sonar un poco el disparo antes de los pitidos de aviso por NULO
           for (int i = 0; i < 10; i++) {
             beep();
             delay(50);
@@ -169,6 +170,7 @@ void loop()
           color = "yellow";
 
         }
+        delay(750);// dejamos sonar un poco el disparo antes de dar los resultados
         digitalWrite(PinBUZZER, LOW);
         break;
       }
