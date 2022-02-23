@@ -95,14 +95,11 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 
 ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+-- IMPORTANTE: El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO
+causa falsas Salidas, ya que la vibración activa el sensor
 ```
 
-<span style="color:red">*IMPORTANTE: El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO*, causa falsas Salidas, ya que la vibración activa el sensor</span>
+
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/componentes.jpg">
