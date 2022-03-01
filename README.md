@@ -144,15 +144,15 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - Esta parte del circuito nos permitirá, por medio de dos Led´s (o un led doble), saber el estado de la carga de una batería.
 - El funcionamiento de este circuito, consistirá que cuando se vea superada la tensión de valor del diodo Zener (Zx) en el cursor del potenciómetro + la tensión -emisor del transistor mas la caída de tensión de la resistencia de 33 kΩ el transistor se disparará, haciendo que el Led verde brille. Al dispararse este transistor el segundo queda con su a masa lo cual hace que el Led rojo no ilumine.
 
-Ahora, si la tensión presente en la del primer transistor cae por debajo del nivel de disparo el mismo se abrirá, quedando sin masa el Led verde lo que hará que éste se apague. En este momento el Led verde se comporta como un diodo en directa, haciendo que la del segundo transistor quede excitada y obligándolo a conducir. Al conducir este transistor hace que el Led rojo brille. De esta forma tenemos un Led verde que brilla cuando la tensión de entrada alcanza o supera la establecida en el potenciómetro y, cuando esta tensión no logra el nivel requerido, el Led rojo es el que enciende.
+- Ahora, si la tensión presente en la del primer transistor cae por debajo del nivel de disparo el mismo se abrirá, quedando sin masa el Led verde lo que hará que éste se apague. En este momento el Led verde se comporta como un diodo en directa, haciendo que la del segundo transistor quede excitada y obligándolo a conducir. Al conducir este transistor hace que el Led rojo brille. De esta forma tenemos un Led verde que brilla cuando la tensión de entrada alcanza o supera la establecida en el potenciómetro y, cuando esta tensión no logra el nivel requerido, el Led rojo es el que enciende.
 
-Dado que se quiso hacer que este sistema sea apropiado para baterías de diversas tensiones a continuación proveemos una tabla que nos da los valores de Zx y Rx apropiados según la tensión de trabajo.
+- Dado que se quiso hacer que este sistema sea apropiado para baterías de diversas tensiones a continuación proveemos una tabla que nos da los valores de Zx y Rx apropiados según la tensión de trabajo.
 
-Tensión	Zener (Zx)	Resistencias (Rx)
-6v	3.3v o menos	390 Ω
-9v	5.1v o menos	470 Ω
-12v	entre 6v y 8v	1 kΩ
-24v	aprox. 18v	1.5 kΩ
+- Tensión	Zener (Zx)	Resistencias (Rx)
+ 6v	3.3v o menos	390 Ω
+ 9v	5.1v o menos	470 Ω
+ 12v	entre 6v y 8v	1 kΩ
+ 24v	aprox. 18v	1.5 kΩ
 
 
 ## Desgranando el ESP8266
