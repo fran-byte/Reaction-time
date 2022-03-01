@@ -56,6 +56,7 @@ El dispositivo alimentado con una bateria de 8,4V recargable estará situado en 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
 - Estableceremos conexión con el dispositivo vía WIFI, en muestro caso será **Club-Atletismo-Leganes** acontinuación nuestro dispositivo nos preguntará si permanecemos en esta red, ya que no tiene acceso a internet, le diremos que queremos permanecer en ella.
+- Si por cualquier motivo perdemos conexión con nuestro dispositivo se recomienda desactivar conexión y volver a conectar buscando nuevamente nuestra red : Club-Atletismo-Leganes
 
   <p align="center">
  
