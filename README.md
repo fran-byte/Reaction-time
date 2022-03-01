@@ -1,6 +1,8 @@
 # TIEMPO DE REACCIÓN (T.R.) (En Proceso de realización)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
+
 ## Índice 
 
 - [Funcionamiento](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#FUNCIONAMIENTO)
@@ -21,7 +23,6 @@
 
 
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
  
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
