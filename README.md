@@ -56,7 +56,7 @@ El dispositivo alimentado con una bateria de 8,4V recargable estará situado en 
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
- ## T.R. en TOKIO 2021
+ ## Tiempos de Reacción en TOKIO 2021
  
  - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
  
