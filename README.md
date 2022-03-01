@@ -23,7 +23,7 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 </p>
 
 - Desde nuestra pantalla, podremos sellecionar las sensibilidades de nuestro dispositivo, así como resetear parámetros.
-- El botón **GO** activará el disparo de salida, este está retardado unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
+- El botón **GO** activará el disparo de salida, este estará **RETARDADO** unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
 - La salida será NULA si se realiza antes del disparo o si se ha realizado con un tiempo inferior a 100ms.
 
 ## Nuestro Dispositivo
