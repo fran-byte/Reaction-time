@@ -6,6 +6,35 @@
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
 
+## FUNCIONAMIENTO
+
+Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías de explosividad en los entrenamientos de un atleta.
+
+La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
+
+### - CONECTANDO CON EL DISPOSITIVO
+
+- Estableceremos conexión con el dispositivo vía WIFI, en muestro caso será **Club-Atletismo-Leganes** acontinuación nuestro dispositivo nos preguntará si permanecemos en esta red, ya que no tiene acceso a internet, le diremos que queremos permanecer en ella.
+- Si por cualquier motivo perdemos conexión con nuestro dispositivo se recomienda desactivar conexión y volver a conectar buscando nuevamente nuestra red : Club-Atletismo-Leganes
+
+  <p align="center">
+ 
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/wifi2.png">
+</p>
+
+- Desde nuestra pantalla, podremos sellecionar las sensibilidades de nuestro dispositivo, así como resetear parámetros.
+- El botón **GO** activará el disparo de salida, este está retardado unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
+- La salida será NULA si se realiza antes del disparo o si se ha realizado con un tiempo inferior a 100ms.
+
+## Nuestro Dispositivo
+
+El dispositivo alimentado con una bateria de 8,4V recargable estará situado en los tacos de salida y estará basado en dos componentes:
+
+- Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266) la encargada de almacenar el programa y el alojamiento Web HTML
+- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes) Utilizaremos solo el eje de ls X.
+
+Utilizaremos el IDE de Arduino para programar el ESP8266.
+
  ## T.R. en TOKIO 2021
  
  - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
@@ -42,31 +71,10 @@
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
 </p>
 
-## Intro
 
-Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías de explosividad en los entrenamientos de un atleta.
 
-La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
-El dispositivo alimentado con una bateria de 8,4V recargable estará situado en los tacos de salida y estará basado en dos componentes:
 
-- Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
-- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
-
-Utilizaremos el IDE de Arduino para programar el ESP8266.
-
-- Estableceremos conexión con el dispositivo vía WIFI, en muestro caso será **Club-Atletismo-Leganes** acontinuación nuestro dispositivo nos preguntará si permanecemos en esta red, ya que no tiene acceso a internet, le diremos que queremos permanecer en ella.
-- Si por cualquier motivo perdemos conexión con nuestro dispositivo se recomienda desactivar conexión y volver a conectar buscando nuevamente nuestra red : Club-Atletismo-Leganes
-
-  <p align="center">
- 
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/wifi2.png">
-</p>
-
-- Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
-Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
-
-- Para este prototipo únicamente utilizaremos la aceleración producida en el eje de las X.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266-esp&ADXL335jpg.jpg">
