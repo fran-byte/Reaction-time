@@ -88,7 +88,7 @@ Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de 
 - Verificar siempre que tenemos actualizado nuestra versión más reciente de Arduino IDE.
 
 - A continuación vamos a Archivo/Preferencias y en la casilla  “Gestor de URLs Adicionales de Tarjetas” agregamos:
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+
 ```
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
