@@ -1,4 +1,4 @@
-# TIEMPO DE REACCIÓN (T.R.) (En Proceso de realización)
+# TIEMPO DE REACCIÓN (T.R.)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
