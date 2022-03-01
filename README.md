@@ -31,7 +31,7 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 El dispositivo alimentado con una bateria de 8,4V recargable estará situado en los tacos de salida y estará basado en dos componentes:
 
 - Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266) la encargada de almacenar el programa y el alojamiento Web HTML
-- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes) Utilizaremos solo el eje de ls X.
+- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes) la encargada de capturar el movimiento del atleta, utilizaremos solo el eje de las X para este proyecto.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
