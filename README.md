@@ -37,7 +37,7 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 
 - Estableceremos conexión con el dispositivo vía WIFI, en muestro caso será **Club-Atletismo-Leganes** acontinuación nuestro dispositivo nos preguntará si permanecemos en esta red, ya que no tiene acceso a internet, le diremos que queremos permanecer en ella.
 - Si por cualquier motivo perdemos conexión con nuestro dispositivo se recomienda desactivar conexión y volver a conectar buscando nuevamente nuestra red : Club-Atletismo-Leganes
-- Nos conectamos a la siguiente dirección: 192.168.4.1/START=O  Nada más conectarnos hará un disparo de prueba y así escuchando el pitído del buzzer sabremos que ha conectado, inmediatamente después veremos la página web con la que interactuaremos.
+- Nos conectamos a la siguiente dirección: **192.168.4.1/START=O**  Nada más conectarnos hará un disparo de prueba y así escuchando el pitído del buzzer sabremos que ha conectado, inmediatamente después veremos la página web con la que interactuaremos.
 
   <p align="center">
  
