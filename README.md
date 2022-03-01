@@ -148,12 +148,12 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 
 - Dado que se quiso hacer que este sistema sea apropiado para baterías de diversas tensiones a continuación proveemos una tabla que nos da los valores de Zx y Rx apropiados según la tensión de trabajo.
 
-- Tensión	Zener (Zx)	Resistencias (Rx)
+Tensión	Zener (Zx)	Resistencias (Rx)
 
--- 6v	3.3v o menos	390 Ω 
--- 9v	5.1v o menos	470 Ω 
--- 12v	entre 6v y 8v	1 kΩ 
--- 24v	aprox. 18v	1.5 kΩ
+- 6v	3.3v o menos	390 Ω 
+- 9v	5.1v o menos	470 Ω 
+- 12v	entre 6v y 8v	1 kΩ 
+- 24v	aprox. 18v	1.5 kΩ
 
 ## Desgranando el ESP8266
 
