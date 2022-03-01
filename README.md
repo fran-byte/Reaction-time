@@ -1,6 +1,26 @@
 # TIEMPO DE REACCIÓN (T.R.) (En Proceso de realización)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
+## Índice 
+
+- [Funcionamiento](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#FUNCIONAMIENTO)
+
+- [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
+
+- [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+
+- [CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+
+- [Componentes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
+
+- [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+
+- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
+
+- [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
+
+
+
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
  
 <p align="center">
@@ -48,24 +68,6 @@ Utilizaremos el IDE de Arduino para programar el ESP8266.
 
 
         
-## Índice 
-
-- [Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
-
-- [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
-
-- [PINOUT ESP8266](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
-
-- [CJMCU ADXL345 acelerómetro de tres ejes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
-
-- [Componentes](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
-
-- [Conexiones](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
-
-- [Código](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
-
-- [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
-
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
