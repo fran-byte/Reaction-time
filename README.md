@@ -10,7 +10,7 @@
  
  - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
  
- <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
+ <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio2.png">
  
 
 
