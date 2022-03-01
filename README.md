@@ -47,6 +47,12 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 - El botón **GO** activará el disparo de salida, este estará **RETARDADO** unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
 - La salida será NULA si se realiza antes del disparo o si se ha realizado con un tiempo inferior a 100ms.
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
+</p>
+
+
+
 ## Nuestro Dispositivo
 
 El dispositivo alimentado con una bateria de 8,4V recargable estará situado en los tacos de salida y estará basado en dos componentes:
@@ -62,18 +68,6 @@ Utilizaremos el IDE de Arduino para programar el ESP8266.
  
  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio2.png">
  
-
-
-
-
-
-
-        
-
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
-</p>
-
 
 
 
