@@ -58,7 +58,7 @@ Utilizaremos el IDE de Arduino para programar el ESP8266.
   
   <p align="center">
  
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/wifi2.png">
 </p>
 
 - Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
