@@ -45,6 +45,7 @@ La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros liso
 </p>
 
 - Desde nuestra pantalla, podremos seleccionar las sensibilidades de nuestro dispositivo, así como resetear parámetros.
+- También dispondremos TEMPORALMETE una ayuda de desviación para sumar o restar segundos hasta lograr calibrar perfectamente el dispositivo que añadiremos al programa y entonces esta opción será eliminada.
 - El botón **GO** activará el disparo de salida, este estará **RETARDADO** unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
 - La salida será NULA si se realiza antes del disparo o si se ha realizado con un tiempo inferior a 100ms.
 
