@@ -11,8 +11,8 @@
 ADXL345 adxl = ADXL345();
 unsigned long pto1 = 0;
 
-unsigned long resta_pto=0;
-
+unsigned long resta_pto = 0;
+int desviacion = 0;
 unsigned long timer0 = 0;
 unsigned long timer1 = 0;
 unsigned long timer2 = 0;
@@ -121,11 +121,11 @@ void loop()
 
   if (peticion.indexOf('/START=O') != -1) {                // Comprueba la petición de DISPARO
 
-    
+
     x = medX();
     for (int i = 0; i < 40; i++) {
       x1 = medX();
-      
+
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         salida = "<h2 style='color:red'>* NULO - PRE-DISPARO *</h2>";
         for (int i = 0; i < 10; i++) {
@@ -148,14 +148,14 @@ void loop()
     {
       //pto1=millis();
       x1 = medX(); //  30ms  demoras en subrutina
-                   // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos en la mitad (30ms) dando un margen de error de +-15ms
-      
-      
+      // Al no saber el pto exacto de inicio de la aceleración dentro de la subrrutina medX()lo colocaremos en la mitad (30ms) dando un margen de error de +-15ms
+
+
       if ((x1 - x) > sensibilidad || (x1 - x) < -sensibilidad) {  //  Accelearación +-50(Sensibilidad Media) en el EJE de las X  ******
         timer2 = millis();
         //resta_pto = timer2-pto1;
 
-        resultado = timer2 - timer1 + 12;  // Añadimos 12ms por demoras 
+        resultado = timer2 - timer1 + 12 + desviacion;  // Añadimos 12ms por demoras
         if (resultado < 100) {                              //Por debajo de 100ms en Atletismo se considera SALIDA NULA   ************
           salida = "<h2 style='color:red'>** SALIDA NULA **</h2>";
           delay(500);// dejamos sonar un poco el disparo antes de los pitidos de aviso por NULO
@@ -205,8 +205,18 @@ salto:
     resultado = 0;
     timer1 = 0;
     timer2 = 0;
+    desviacion = 0;
     digitalWrite(PinBUZZER, LOW);
 
+  }
+
+  if (peticion.indexOf('START=P') == 11) {  // Suma +5 ms (correción de desviación)
+    beep();
+    desviacion = desviacion + 5;
+  }
+  if (peticion.indexOf('START=Q') == 11) {  // Suma -5 ms (correción de desviación)
+    beep();
+    desviacion = desviacion - 5;
   }
 
   // *******************************************************    Envía la página HTML de respuesta al cliente
@@ -234,7 +244,7 @@ salto:
 
   client.print(resultado);                           // Mostramos el resultado, es decir el TR (Tiempo de reacción)
   client.println(" ms</h1>");
-  client.println("<br><br>");
+  client.println("<br>");
   client.println(salida);                            // Mostramos Salida NULA o CORRECTA
   client.println("<br><br>");
 
@@ -249,6 +259,15 @@ salto:
   client.println("<button type='button' onClick=location.href='/START=L'> Sens BAJA </button>");
   client.println("<button type='button' onClick=location.href='/START=M'> Sens MEDIA </button>");
   client.println("<button type='button' onClick=location.href='/START=H'> Sens ALTA </button><br><br>");
+
+  client.print(" Desviación: ");
+  client.print(desviacion);
+  client.print(" ms   ");
+  client.print("<button type='button' onClick=location.href='/START=P'>  + 5   </button>");
+  client.print("<button type='button' onClick=location.href='/START=Q'>  - 5   </button>");
+
+  client.print("<br><br>");
+
 
   client.println("</center></font></body></html>");
   delay(1);
