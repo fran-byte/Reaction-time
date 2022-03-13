@@ -1,27 +1,11 @@
-# TIEMPO DE REACCIÓN (T.R.) (En Proceso de realización)
+# TIEMPO DE REACCIÓN (T.R.)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
- 
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
 
- ## T.R. en TOKIO 2021
- 
- - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
- 
- <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio.png">
- 
-
-
-
-
-
-
-        
 ## Índice 
 
-- [Intro](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#intro)
+- [Funcionamiento](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#FUNCIONAMIENTO)
 
 - [Instalando la tarjeta ESP8266 en Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
 
@@ -38,33 +22,58 @@
 - [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
 
 
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
-</p>
 
-## Intro
+ 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
+
+## FUNCIONAMIENTO
 
 Este repositorio pretende medir los tiempos de reacción y cuantificar las mejorías de explosividad en los entrenamientos de un atleta.
 
 La salida de tacos en atletismo, se realiza en pruebas de 60/100/400 metros lisos y en 60/100/110 metros vallas (incluido el primer relevo de los 4 x 200 metros y 4 x 400 m) y no siendo utilizada para ninguna otra disciplina de mayor distancia. En las distancias más cortas, es fundamental dominar esta técnica.
 
+### - CONECTANDO CON EL DISPOSITIVO
+
+- Estableceremos conexión con el dispositivo vía WIFI, en muestro caso será **Club-Atletismo-Leganes** acontinuación nuestro dispositivo nos preguntará si permanecemos en esta red, ya que no tiene acceso a internet, le diremos que queremos permanecer en ella.
+- Si por cualquier motivo perdemos conexión con nuestro dispositivo se recomienda desactivar conexión y volver a conectar buscando nuevamente nuestra red : Club-Atletismo-Leganes
+- Nos conectamos a la siguiente dirección: **192.168.4.1/START=O**  Nada más conectarnos hará un disparo de prueba y así escuchando el pitído del buzzer sabremos que ha conectado, inmediatamente después veremos la página web con la que interactuaremos.
+
+  <p align="center">
+ 
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/wifi2.png">
+</p>
+
+- Desde nuestra pantalla, podremos seleccionar las sensibilidades de nuestro dispositivo, así como resetear parámetros.
+- También dispondremos TEMPORALMETE una ayuda de desviación para sumar o restar milisegundos hasta lograr calibrar perfectamente el dispositivo que añadiremos al programa y entonces esta opción será eliminada.
+- El botón **GO** activará el disparo de salida, este estará **RETARDADO** unos milisegundos, para poder capturar cualquier movimiento PRE-DISPARO
+- La salida será NULA si se realiza antes del disparo o si se ha realizado con un tiempo inferior a 100ms.
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
+</p>
+
+
+
+## Nuestro Dispositivo
+
 El dispositivo alimentado con una bateria de 8,4V recargable estará situado en los tacos de salida y estará basado en dos componentes:
 
-- Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266)
-- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+- Placa de desarrollo [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#nodemcu-esp8266) la encargada de almacenar el programa y el alojar el servidor Web HTML
+- Módulo Acelerómetro [**CJMCU ADXL345**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes) la este módulo se encargará de capturar el movimiento del atleta, utilizaremos solo el eje de las X para este proyecto.
 
 Utilizaremos el IDE de Arduino para programar el ESP8266.
 
-  
-  <p align="center">
+ ## Tiempos de Reacción en TOKIO 2021
  
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/movil.png">
-</p>
+ - Se podría considerar un tiempo aceptable **< 200ms**, bueno **< 170ms** y excelente **< 145ms**.
+ 
+ <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio2.png">
+ 
 
-- Básicamente consistirá en un disparo simulado situado en una app/web en un móvil, dando paso a una cuenta en milisegundos.
-Esta cuenta o timer será interrumpida por el movimiento (generado en los tacos de salida al impulsarse con el pie el atleta) captado en el accelerómetro ADXL335, posteriormente ese registro de tiempo lo transmitiremos de vuelta a nuestra app.
 
-- Para este prototipo únicamente utilizaremos la aceleración producida en el eje de las X.
+
+
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266-esp&ADXL335jpg.jpg">
@@ -80,7 +89,7 @@ Este proceso es necesario para que el IDE de arduino reconozca nuestra placa de 
 - Verificar siempre que tenemos actualizado nuestra versión más reciente de Arduino IDE.
 
 - A continuación vamos a Archivo/Preferencias y en la casilla  “Gestor de URLs Adicionales de Tarjetas” agregamos:
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+
 ```
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
@@ -94,6 +103,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
 - **IMPORTANTE:** El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO causa falsas Salidas, ya que la vibración activa el sensor
+- Es importante colocar el Buzzer sobre una almohadilla, o en otra caja a parte, para evitar dichas interferencias mecánicas.
  
 
 
@@ -130,6 +140,26 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/Proto.jpg">
 </p>
 
+## EXTRA
+### NIVEL DE BATERIA
+
+- Esta parte del circuito nos permitirá, por medio de dos Led´s (o un led doble), saber el estado de la carga de una batería.
+- El funcionamiento de este circuito, consistirá que cuando se vea superada la tensión de valor del diodo Zener (Zx) en el cursor del potenciómetro + la tensión -emisor del transistor mas la caída de tensión de la resistencia de 33 kΩ el transistor se disparará, haciendo que el Led verde brille. Al dispararse este transistor el segundo queda con su a masa lo cual hace que el Led rojo no ilumine.
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/extra.gif">
+</p>
+
+- Ahora, si la tensión presente en la del primer transistor cae por debajo del nivel de disparo el mismo se abrirá, quedando sin masa el Led verde lo que hará que éste se apague. En este momento el Led verde se comporta como un diodo en directa, haciendo que la del segundo transistor quede excitada y obligándolo a conducir. Al conducir este transistor hace que el Led rojo brille. De esta forma tenemos un Led verde que brilla cuando la tensión de entrada alcanza o supera la establecida en el potenciómetro y, cuando esta tensión no logra el nivel requerido, el Led rojo es el que enciende.
+
+- Dado que se quiso hacer que este sistema sea apropiado para baterías de diversas tensiones a continuación proveemos una tabla que nos da los valores de Zx y Rx apropiados según la tensión de trabajo.
+
+Tensión	Zener (Zx)	Resistencias (Rx)
+
+- 6v	3.3v o menos	390 Ω 
+- 9v	5.1v o menos	470 Ω 
+- 12v	entre 6v y 8v	1 kΩ 
+- 24v	aprox. 18v	1.5 kΩ
 
 ## Desgranando el ESP8266
 
