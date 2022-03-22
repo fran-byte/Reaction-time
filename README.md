@@ -165,16 +165,20 @@ entonces para 10000 Ohm será el —– x %
 ```c
 void leer_voltios()
 {
+
  float voltios;
  voltios= (analogRead(12))0,0032258064524.9000;
+ 
  if (voltios<=6.60)
  {
   battery = "LOW";
  }
+ 
  else
  {
   battery = "GOOD";
  }
+ 
 }
 ```
 
