@@ -154,6 +154,7 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - Ya que las resistencias en el mercado nos impiden tener exactamente esas 5 partes, los calculos quedarán de la siguiente manera:
 
 para 49000 Ohm que será el —– 100 %
+
 entonces para 10000 Ohm será el —– x %
 
 - Con lo que el porcentaje real para esa división será del 20,408 %
