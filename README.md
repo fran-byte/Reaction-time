@@ -164,22 +164,24 @@ entonces para 10000 Ohm será el —– x %
 void leer_voltios()
 {
 
+<h2 style='color:orange'>Sensibilidad: MEDIA</h2>";
+
  float voltios;
  voltios= (analogRead(12))0,0032258064524.9000;
  
  if (voltios <= 5.50)
  {
-  battery = "LOW";
+  battery = "<h2 style='color:red'>BATERIA |</h2>";
  }
  
  if ((voltios > 5.50)  && (voltios < 6.60))
  {
-  battery = "MEDIUM";
+  battery = "<h2 style='color:orange'>BATERIA |||</h2>";
  }
  
  else
  {
-  battery = "HIGHT";
+  battery = "<h2 style='color:green'>BATERIA |||||</h2>";
  }
  
 }
