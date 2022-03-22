@@ -143,7 +143,8 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 ## EXTRA
 ### NIVEL DE BATERIA
 
-- Vamos a utilizar la entrada analógica 12 (GPIO12) para sensar la tensión de alimentación de la batería.
+- Podemos incluir en el HTML una variable str para visualizar el nivel de bateria
+- Para ello vamos a utilizar la entrada analógica 12 (GPIO12) para sensar la tensión de alimentación de la batería.
 
 - No siendo esta una entrada realmente analógica, si no una digital de 1024 partes. 
 - Podremos considerar el nivel 3.3V como la parte mas alta 1023 y el nivel de 0V como la parte mas baja 0.
