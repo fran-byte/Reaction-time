@@ -143,23 +143,40 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 ## EXTRA
 ### NIVEL DE BATERIA
 
-- Esta parte del circuito nos permitirá, por medio de dos Led´s (o un led doble), saber el estado de la carga de una batería.
-- El funcionamiento de este circuito, consistirá que cuando se vea superada la tensión de valor del diodo Zener (Zx) en el cursor del potenciómetro + la tensión -emisor del transistor mas la caída de tensión de la resistencia de 33 kΩ el transistor se disparará, haciendo que el Led verde brille. Al dispararse este transistor el segundo queda con su a masa lo cual hace que el Led rojo no ilumine.
+- Vamos a utilizar la entrada analógica 12 (GPIO12) para sensar la tensión de alimentación de la batería.
 
-<p align="center">
-  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/extra.gif">
-</p>
+- No siendo esta una entrada realmente analógica, si no una digital de 1024 partes. 
+- Podremos considerar el nivel 3.3V como la parte mas alta 1023 y el nivel de 0V como la parte mas baja 0.
+- Ya que vamos a utilizar tensiones 8-10V que superiores a las aceptadas para esta entrada 3.3V no podremos conectar la batería directamente a la entrada analógica, y utilizaremos un divisor de tensión.
+- Al construir el divisor de tensión usaremos valores relativamente altos, para que no tengamos consumos elevados en él.
+- Para ello vamos a intentar utilizar 5 partes (hasta un tope de 25V), lo que haremos será dividir la tensión de entrada en 5 partes leerla, y acontinuación realizar el calculo de la tensión real de la batería.
+- Ya que las resistencias en el mercado nos impiden tener exactamente esas 5 partes, los calculos quedarán de la siguiente manera:
 
-- Ahora, si la tensión presente en la del primer transistor cae por debajo del nivel de disparo el mismo se abrirá, quedando sin masa el Led verde lo que hará que éste se apague. En este momento el Led verde se comporta como un diodo en directa, haciendo que la del segundo transistor quede excitada y obligándolo a conducir. Al conducir este transistor hace que el Led rojo brille. De esta forma tenemos un Led verde que brilla cuando la tensión de entrada alcanza o supera la establecida en el potenciómetro y, cuando esta tensión no logra el nivel requerido, el Led rojo es el que enciende.
+para 49000 Ohm que será el —– 100 %
+entonces para 10000 Ohm será el —– x %
 
-- Dado que se quiso hacer que este sistema sea apropiado para baterías de diversas tensiones a continuación proveemos una tabla que nos da los valores de Zx y Rx apropiados según la tensión de trabajo.
+- Con lo que el porcentaje real para esa división será del 20,408 %
+- Entonces obtendremos ese multiplicador dividiendo el 100% entre el calculado, es decir 4,9000.
 
-Tensión	Zener (Zx)	Resistencias (Rx)
+- Y para obtener la parte de tensión correspondiente a cada parte nuestra entrada analógica, dividiremos la tensión de referencia entre 1023.
+3.3V / 1023 = 0,003225806452
+- Y finalizando calcularemos la tensión de la batería leyendo la entrada analógica y multiplicandola por el valor de cada parte y por el multiplicador.
 
-- 6v	3.3v o menos	390 Ω 
-- 9v	5.1v o menos	470 Ω 
-- 12v	entre 6v y 8v	1 kΩ 
-- 24v	aprox. 18v	1.5 kΩ
+void leer_voltios()
+{
+ float voltios;
+ voltios= (analogRead(12))0,0032258064524.9000;
+ if (voltios<=6.60)
+ {
+  battery = "LOW";
+ }
+ else
+ {
+  battery = "GOOD";
+ }
+}
+
+
 
 ## Desgranando el ESP8266
 
