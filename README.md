@@ -167,12 +167,12 @@ void leer_voltios()
  float voltios;
  voltios= (analogRead(12))0,0032258064524.9000;
  
- if (voltios<=5.50)
+ if (voltios <= 5.50)
  {
   battery = "LOW";
  }
  
- elif ((voltios>5.50)  && (voltios<6.60))
+ if ((voltios > 5.50)  && (voltios < 6.60))
  {
   battery = "MEDIUM";
  }
