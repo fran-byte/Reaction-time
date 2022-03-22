@@ -146,19 +146,15 @@ Conectamos el NodeMCU ESP8266 con el sensor del acelerómetro ADXL 345 utilizand
 - Podemos incluir en el HTML una variable str para visualizar el nivel de batería
 - Para ello vamos a utilizar la entrada analógica 12 (GPIO12) para sensar la tensión de alimentación de la batería.
 
-- No siendo esta una entrada realmente analógica, si no una digital de 1024 partes. 
-- Podremos considerar el nivel 3.3V como la parte mas alta 1023 y el nivel de 0V como la parte mas baja 0.
-- Ya que vamos a utilizar tensiones 8-10V superiores a las aceptadas para esta entrada 3.3V no podremos conectar la batería directamente a la entrada analógica, y utilizaremos un divisor de tensión.
-- Al construir el divisor de tensión usaremos valores relativamente altos, para no tener consumos elevados en él.
-- Para ello vamos a intentar utilizar 5 partes (hasta un tope de 25V), lo que haremos será dividir la tensión de entrada en 5 partes, leerla, y acontinuación realizar el calculo de la tensión real de la batería.
-- Ya que las resistencias en el mercado nos impiden tener exactamente esas 5 partes, los calculos quedarán de la siguiente manera:
+- No siendo esta una entrada realmente analógica, si no una digital de 1024 partes. Podremos considerar el nivel 3.3V como la parte mas alta 1023 y el nivel de 0V como la parte mas baja 0. Y ya que vamos a utilizar tensiones 8-10V superiores a las aceptadas para esta entrada 3.3V no podremos conectar la batería directamente a la entrada analógica, y utilizaremos un divisor de tensión.
+- Al construir el divisor de tensión usaremos valores relativamente altos, para no tener consumos elevados en él. Para ello vamos a intentar utilizar 5 partes (hasta un tope de 25V), lo que haremos será dividir la tensión de entrada en 5 partes, leerla, y acontinuación realizar el calculo de la tensión real de la batería.
+- Y Ya que las resistencias en el mercado nos impiden tener exactamente esas 5 partes, los calculos quedarán de la siguiente manera:
 
 para 49000 Ohm que será el —– 100 %
 
 entonces para 10000 Ohm será el —– x %
 
-- Con lo que el porcentaje real para esa división será del 20,408 %
-- Entonces obtendremos ese multiplicador dividiendo el 100% entre el calculado, es decir 4,9000.
+- Con lo que el porcentaje real para esa división será del 20,408 %  Entonces obtendremos ese multiplicador dividiendo el 100% entre el calculado, es decir 4,9000.
 
 - Y para obtener la parte de tensión correspondiente a cada parte nuestra entrada analógica, dividiremos la tensión de referencia entre 1023.
 3.3V / 1023 = 0,003225806452
