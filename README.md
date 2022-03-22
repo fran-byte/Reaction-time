@@ -162,6 +162,7 @@ entonces para 10000 Ohm será el —– x %
 3.3V / 1023 = 0,003225806452
 - Y finalizando calcularemos la tensión de la batería leyendo la entrada analógica y multiplicandola por el valor de cada parte y por el multiplicador.
 
+```c
 void leer_voltios()
 {
  float voltios;
@@ -175,7 +176,7 @@ void leer_voltios()
   battery = "GOOD";
  }
 }
-
+```
 
 
 ## Desgranando el ESP8266
