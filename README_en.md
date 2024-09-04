@@ -21,7 +21,10 @@
 
 - [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/giphy.gif"></p>
 
+  
 ## FUNCTIONALITY
 
 This repository aims to measure reaction times and quantify improvements in explosiveness during an athlete's training.
@@ -34,23 +37,38 @@ The starting blocks in athletics are used in 60/100/400-meter sprints and in 60/
 - If, for any reason, we lose connection to our device, it is recommended to disconnect and reconnect, searching for our network: Club-Atletismo-Leganes.
 - We connect to the following address: **192.168.4.1/START=O**. As soon as we connect, a test beep will be made, letting us know that the buzzer has connected. Immediately afterward, we will see the webpage we will interact with.
 
+<p align="center">
+ 
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/wifi2.png">
+</p>
+
 - From our screen, we can select the sensitivities of our device and reset parameters.
 - TEMPORARILY, we will have a deviation help to add or subtract milliseconds until the device is perfectly calibrated. Once this is achieved, this option will be removed.
 - The **GO** button will activate the start shot, which will be **DELAYED** by a few milliseconds to capture any PRE-SHOOT movement.
 - The start will be FALSE if it occurs before the shot or if it is performed with a time less than 100ms.
 
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/false_start.gif">
+</p>
+
 ## Our Device
 
 The device, powered by an 8.4V rechargeable battery, will be placed in the starting blocks and will be based on two components:
 
-- **NodeMCU ESP8266** development board, which stores the program and hosts the HTML Web server.
-- **CJMCU ADXL345 Accelerometer Module**, responsible for capturing the athlete's movement. We will use only the X-axis for this project.
+- [**NodeMCU ESP8266**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#nodemcu-esp8266) development board, which stores the program and hosts the HTML Web server.
+- [**CJMCU ADXL345 Accelerometer Module**](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes) responsible for capturing the athlete's movement. We will use only the X-axis for this project.
 
 We will use the Arduino IDE to program the ESP8266.
 
 ## Reaction Times in TOKYO 2021
 
 - An acceptable time would be considered **< 200ms**, good **< 170ms**, and excellent **< 145ms**.
+<img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/TR Tokio2.png">
+
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/esp8266-esp&ADXL335jpg.jpg">
+</p>
 
 ## Installing our ESP8266 board in Arduino
 
