@@ -11,7 +11,7 @@
 
 - [ESP8266 PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#pinout-datasheet)
 
-- [CJMCU ADXL345 three-axis accelerometer](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+- [CJMCU ADXL345 three-axis accelerometer](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#cjmcu-adxl345-aceler%C3%B3three-axis-acceleromete)
 
 - [Components](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#components)
 
