@@ -102,7 +102,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 - Resistenvia de 1KΩ.
 - Optoacoplador PC 817.
 - Buzzer Piezoeléctrico 3-30V DC - 30mA 95dB
-- **IMPORTANTE:** El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO causa falsas Salidas, ya que la vibración activa el sensor
+- **IMPORTANTE:** <span style="color: red;">El BUZZER NO PUEDE ESTAR SOLDADO A LA MISMA PLACA DEL ACELERÓMETRO</span> causa falsas Salidas, ya que la vibración activa el sensor
 - Es importante colocar el Buzzer sobre una almohadilla, o en otra caja a parte, para evitar dichas interferencias mecánicas.
  
 
