@@ -172,68 +172,67 @@ void leer_voltios()
 }
 ```
 
-## Desgranando el ESP8266
+## Breaking down the ESP8266
 
-El ESP8266 normalmente viene integrado en un módulo. Esto es debido a que el propio SoC ESP8266 no tiene memoria Flash integrada. El primero que vio la luz fue el ESP-01 el cual estaba pensado para funcionar como interfaz WiFi de las placas de Arduino. Sin embargo, enseguida se hizo muy popular en la comunidad Maker.
+The ESP8266 usually comes integrated into a module. This is because the ESP8266 SoC itself does not have integrated Flash memory. The first to see the light was the ESP-01 which was designed to function as a WiFi interface for Arduino boards. However, it quickly became very popular in the Maker community.
 
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/250px-ESP-01.jpg"><img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP8266 pla.jpg">
 </p>
 
 
-A partir de este módulo surgieron muchos más hasta que finalmente irrumpió en el mercado el ESP-12, el más popular de todos los módulos. Este módulo se utiliza en multitud de placas siendo las más famosas NodeMCU y Wemos.
+From this module many more emerged until the ESP-12 finally burst onto the market, the most popular of all the modules. This module is used in many boards, the most famous being NodeMCU and Wemos.
 
 ## NodeMCU ESP8266
-Es una plataforma de desarrollo similar a Arduino y orientada a IoT (Internet de las cosas).
-La placa **NodeMcu v2 ESP8266** tiene como núcleo al SoM ESP-12E que a su vez está basado en el SoC Wi-Fi ESP8266, integra además el conversor **USB-Serial TTL CP2102** y conector micro-USB necesario para la programación y comunicación a PC.
+It is a development platform similar to Arduino and oriented towards IoT (Internet of Things).
+The **NodeMcu v2 ESP8266** board has as its core the ESP-12E SoM, which in turn is based on the ESP8266 Wi-Fi SoC, and also integrates the **USB-Serial TTL CP2102** converter and the necessary micro-USB connector. for programming and communication to PC.
 
-Está diseñado especialmente para trabajar montado en protoboard o soldado sobre una placa. Posee un regulador de voltaje de 3.3V en placa, esto permite alimentar la placa directamente del puerto micro-USB o por los pines 5V y GND. **Los pines de entradas/salidas (GPIO) trabajan a 3.3V** por lo que para conexión a sistemas de 5V es necesario utilizar conversores
+It is specially designed to work mounted on a breadboard or soldered on a plate. It has a 3.3V voltage regulator on the board, this allows you to power the board directly from the micro-USB port or through the 5V and GND pins. **The input/output pins (GPIO) work at 3.3V** so for connection to 5V systems it is necessary to use converters
 
 
-**ESPECIFICACIONES TÉCNICAS:**
-- Voltaje de Alimentación: 4.5V~9V (10VMAX) y/o alimentación por USB
-- Voltaje de Entradas/Salidas: 3.3V DC (**No usar 5V**)
-- Corriente nominal por pin: 12mA
-- Placa: NodeMCU v2 (Amica)
-- Chip conversor USB-serial: CP2102
+**TECHNICAL SPECIFICATIONS:**
+- Power Voltage: 4.5V~9V (10VMAX) and/or USB powered
+- Input/Output Voltage: 3.3V DC (**Do not use 5V**)
+- Nominal current per pin: 12mA
+- Board: NodeMCU v2 (Amica)
+- USB-serial converter chip: CP2102
 - SoM: ESP-12E (Ai-Thinker)
 - SoC: ESP8266 (Espressif)
 - CPU: Tensilica Xtensa LX3 (32 bit)
-- Frecuencia de Reloj: 80MHz/160MHz
+- Clock Frequency: 80MHz/160MHz
 - Instruction RAM: 32KB
 - Data RAM: 96KB
-- Memoria Flash Externa: 4MB
-- Pines Digitales GPIO: 17 (4 pueden configurarse como PWM a 3.3V)
-- Pin Analógico ADC: 1 (0-1V)
-- Puerto Serial UART: 2
-- Certificación FCC
-- Antena en PCB
+- External Flash Memory: 4MB
+- GPIO Digital Pins: 17 (4 can be configured as PWM at 3.3V)
+- Analog ADC Pin: 1 (0-1V)
+- UART Serial Port: 2
+- FCC Certification
+- Antenna on PCB
 - 802.11 b/g/n
 - Wi-Fi Direct (P2P), soft-AP
-- Stack de Protocolo TCP/IP integrado
-- PLLs, reguladores, DCXO y manejo de poder integrados
-- Potencia de salida de +19.5dBm en modo 802.11b
-- Corriente de fuga menor a 10uA
+- Integrated TCP/IP Protocol Stack
+- Integrated PLLs, regulators, DCXO and power management
+- Output power of +19.5dBm in 802.11b mode
+- Leakage current less than 10uA
 - STBC, 1×1 MIMO, 2×1 MIMO
 - A-MPDU & A-MSDU aggregation & 0.4ms guard interval
 - Wake up and transmit packets in < 2ms
-- Consumo de potencia Standby < 1.0mW (DTIM3)
-- Pulsador RESET y FLASH
-- Led indicadores: 2
-- Dimensiones: 49*26*12 mm
-- Peso: 9 gramos
+- Standby power consumption < 1.0mW (DTIM3)
+- RESET and FLASH button
+- Led indicators: 2
+- Dimensions: 49*26*12mm
+- Weight: 9 grams
  
-**CONECTIVIDAD**
+**CONNECTIVITY**
 
 - SDIO 2.0, SPI, UART
-- Integra RF switch, balun, 24dBm PA, DCXO y PMU
-- Posee un procesador RISC, memoria en chip e interface para memoria externa
-- Procesador MAC/Baseband integrado
-- Interface I2S para apliaciones de audio de alta calidad
-- Reguladores de voltaje lineales "low-dropout" en chip
-- Arquitectura propietaria de generacion de clock "spurious free"
-- Módulos WEP, TKIP, AES y WAPI integrados
-
+- Integrates RF switch, balun, 24dBm PA, DCXO and PMU
+- It has a RISC processor, on-chip memory and interface for external memory
+- Integrated MAC/Baseband processor
+- I2S interface for high quality audio applications
+- On-chip "low-dropout" linear voltage regulators
+- Proprietary "spurious free" clock generation architecture
+- Integrated WEP, TKIP, AES and WAPI modules
 
 ## PINOUT datasheet
 
@@ -245,67 +244,64 @@ Está diseñado especialmente para trabajar montado en protoboard o soldado sobr
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP8266 varias.jpg">
 </p>
 
-## Pines PWM
-Notarás que algunos de los pines digitales vienen con la funcionalidad de **Modulación de Ancho de Pulso**, o **PWM**. Esto nos proporciona un medio de simular una señal analógica usando una serie rápida de pulsos digitales.
+## PWM pins
+You'll notice that some of the digital pins come with **Pulse Width Modulation**, or **PWM** functionality. This provides us with a means of simulating an analog signal using a rapid series of digital pulses.
 
-Las señales PWM se usan comúnmente para controlar motores.
+PWM signals are commonly used to control motors.
 
-Se podría hacer esto usando cualquiera de las salidas digitales de la MCU escribiendo un ciclo de código que haga un ciclo rápido de encendido y apagado de un pin determinado, pero esto interferiría con el programa principal y consumiría recursos valiosos.
+This could be done using any of the MCU's digital outputs by writing a code loop that quickly cycles a given pin on and off, but this would interfere with the main program and consume valuable resources.
 
-Una mejor solución es usar una de las salidas PWM separadas, que se encargará de todos los ciclos por ti una vez que hayan recibido un valor.
+A better solution is to use one of the separate PWM outputs, which will handle all the loops for you once they have received a value.
 
-Puedes escribir un valor en un PWM usando la función **analogWrite()**. Asegúrate de que has seleccionado una salida compatible con **PWM**.
+You can write a value to a PWM using the **analogWrite()** function. Make sure you have selected a **PWM** compatible output.
 
-En el NodeMCU, estos son D2, D5, D6 y D8.
+On the NodeMCU, these are D2, D5, D6, and D8.
 
-## Comunicación
-El NodeMCU soporta los tres principales protocolos de comunicación en serie que se encuentran en el Arduino (y una gama de otros dispositivos equipados con MCU). Estos son:
+## Communication
+The NodeMCU supports the three main serial communication protocols found on the Arduino (and a range of other MCU-equipped devices). These are:
 
 ### - UART
-UART, o **Receptor/Transmisor Asíncrono Universal**, es una forma de **comunicación en serie** que depende de que un solo cable vaya en cualquier dirección. Dado que el formato es asíncrono, no hay necesidad de enviar una señal de reloj por un cable separado: los datos se transmiten simplemente a una velocidad predeterminada (la velocidad en **baudios**), con los dispositivos conectados desempaquetando los datos a medida que llegan al otro extremo. Se hace a través de los pines **Rx** y **Tx**, que se utilizan respectivamente para recibir y transmitir.
+UART, or **Universal Asynchronous Receiver/Transmitter**, is a form of **serial communication** that relies on a single wire going in either direction. Since the format is asynchronous, there is no need to send a clock signal over a separate cable: data is simply transmitted at a predetermined rate (the rate in **baud**), with connected devices unpacking the data as that reach the other extreme. It is done through the **Rx** and **Tx** pins, which are used respectively to receive and transmit.
 
-### - I2C  (la comunicación que usaremos para este proyecto)
-El circuito integrado tiene una señal de reloj separada, pero usa un solo cable para la transmisión de datos. Es genial para conectar un único dispositivo maestro a múltiples esclavos, cada uno de los cuales tiene una dirección separada.
+### - I2C (the communication we will use for this project)
+The integrated circuit has a separate clock signal, but uses a single wire for data transmission. It's great for connecting a single master device to multiple slaves, each of which has a separate address.
 
-I2C también se llama ‘**TWI**’, o ‘**interfaz de dos cables**’. Los pines **SCL** y **SDA** están en los pines digitales **D1** y **D2**. Como su nombre lo indica, I2C es genial para conectar circuitos integrados entre sí.
+I2C is also called '**TWI**', or '**two-wire interface**'. The **SCL** and **SDA** pins are on the digital pins **D1** and **D2**. As the name implies, I2C is great for connecting integrated circuits together.
 
 ### - SPI
- «**Interfaz periférica en serie**». Se usa comúnmente para conectar microcontroladores y otros circuitos integrados, como el I2C, pero **usa tres pines en lugar de sólo dos**. También es **full-dúplex**, lo que significa que cada operación de **lectura es capaz de coincidir con una operación de escritura** que viaja en la otra dirección. A diferencia del I2C, sólo el dispositivo maestro de una cadena SPI es capaz de modificar la velocidad del reloj. En el NodeMCU, SPI utiliza tres pines: **D5** es el **CLK**; **D6** es el Master In Slave Out (o **MISO**); **D7** es el Master Out Slave In (**MOSI**).
+ «**Serial peripheral interface**». It is commonly used to connect microcontrollers and other integrated circuits, such as I2C, but **uses three pins instead of just two**. It is also **full-duplex**, meaning that each **read operation is able to match a write** operation traveling in the other direction. Unlike I2C, only the master device in an SPI chain is capable of modifying the clock speed. On the NodeMCU, SPI uses three pins: **D5** is the **CLK**; **D6** is the Master In Slave Out (or **MISO**); **D7** is the Master Out Slave In (**MOSI**).
 
-## CJMCU ADXL345 acelerómetro de tres ejes
+## CJMCU ADXL345 three-axis accelerometer
 
-**Modelo: CJMCU ADXL345**
+**Model: CJMCU ADXL345**
 
-Este módulo tiene un acelerómetro ADXL335 de 3 ejes que nos permite medir aceleraciones del rango de +3G -3G.
+This module has a 3-axis ADXL335 accelerometer that allows us to measure accelerations in the +3G -3G range.
 
-Se trata de un sensor analógico que nos proporcionará mediante 3 pines, tres voltajes proporcionales a la aceleración de cada eje.
-
+It is an analog sensor that will provide us, through 3 pins, with three voltages proportional to the acceleration of each axis.
 <p align="center">
   <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ADXL335.jpg">
 </p>
 
-Esta placa tiene un regulador de voltaje de 3,3 V incorporado para alimentar el chip, por lo que puede funcionar con cualquier voltaje de 3,3 V a 5 V. Sin embargo, no hay conversión de nivel lógico, por lo que las conexiones I2C/SPI están a 3,3 V. La conexión a un sistema de 5 V requerirá un convertidor de nivel lógico adecuado.
+This board has a built-in 3.3V voltage regulator to power the chip, so it can work with any voltage from 3.3V to 5V. However, there is no logic level conversion, so the connections I2C/SPI are at 3.3 V. Connection to a 5 V system will require a suitable logic level converter.
 
-- Voltaje de entrada: 3.3V~5V
+- Input voltage: 3.3V~5V
 
-- Voltaje de operación: 2V~3.6V
+- Operating voltage: 2V~3.6V
 
-- Corriente de operación: 140uA
+- Operating current: 140uA
 
-- Interfaz:  I2C / SPI (5MHz)
+- Interface: I2C / SPI (5MHz)
 
-- Auto-test
+- Self-test
 
-- Ejes x, y, z
+- Axes x, y, z
 
-- Frecuencia de reloj interna:  400KHz
+- Internal clock frequency: 400KHz
 
-- Sensibilidad:  4 LSB/g
+- Sensitivity: 4 LSB/g
 
-- Sensibilidad seleccionable:  2g/4g/8g/16g
+- Selectable sensitivity: 2g/4g/8g/16g
 
-- Temperatura de operación: -40°C~85°C
+- Operating temperature: -40°C~85°C
 
-- Dimensiones:  19x14 mm
-
-
+- Dimensions: 19x14 mm
