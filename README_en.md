@@ -129,3 +129,13 @@ then for 10000 Ohms, it will be the —– x %
 
 - To obtain the corresponding voltage part of each part of our analog input, we will divide the reference voltage by 1023.
 3.3V / 1023 = 0.003225806452
+
+## PINOUT datasheet
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP-12E-Development-Board-ESP8266-NodeMCU-Pinout.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/fran-byte/tiempo_reaccion/blob/main/mdArchives/ESP8266 varias.jpg">
+</p>
