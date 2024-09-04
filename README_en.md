@@ -5,17 +5,17 @@
 
 ## Index
 
-- [Functionality](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#FUNCTIONALITY)
+- [Functionality](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#FUNCTIONALITY)
 
-- [Installing the ESP8266 board in Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#Installing-our-ESP8266-board-in-Arduino)
+- [Installing the ESP8266 board in Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#Installing-our-ESP8266-board-in-Arduino)
 
-- [ESP8266 PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+- [ESP8266 PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#pinout-datasheet)
 
-- [CJMCU ADXL345 three-axis accelerometer](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+- [CJMCU ADXL345 three-axis accelerometer](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
 
-- [Components](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#components)
+- [Components](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#components)
 
-- [Connections](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#connections)
+- [Connections](https://github.com/fran-byte/tiempo_reaccion/blob/main/README_en.md#connections)
 
 - [Code](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
 
