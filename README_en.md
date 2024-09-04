@@ -5,14 +5,22 @@
 
 ## Index
 
-- Functionality
-- Installing the ESP8266 board in Arduino
-- ESP8266 PINOUT
-- CJMCU ADXL345 three-axis accelerometer
-- Components
-- Connections
-- Code
-- BETA
+- [Functionality](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#FUNCIONAMIENTO)
+
+- [Installing the ESP8266 board in Arduino](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#instalando-nuestra-tarjeta-esp8266-en-arduino)
+
+- [ESP8266 PINOUT](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#pinout-datasheet)
+
+- [CJMCU ADXL345 three-axis accelerometer](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#cjmcu-adxl345-aceler%C3%B3metro-de-tres-ejes)
+
+- [Components](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#componentes)
+
+- [Connections](https://github.com/fran-byte/tiempo_reaccion/blob/main/README.md#conexiones)
+
+- [Code](https://github.com/fran-byte/tiempo_reaccion/tree/main/code/tiempo_reaccion)
+
+- [BETA](https://github.com/fran-byte/tiempo_reaccion#beta)
+
 
 ## FUNCTIONALITY
 
