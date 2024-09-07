@@ -1,4 +1,4 @@
-# TIEMPO DE REACCIÓN (T.R.)
+# TIEMPO DE REACCIÓN (T.R.) [ENGLISH - VERSION](README_en.md)
 ## MEDICIÓN del TR en SALIDAS de TACOS
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](/LICENSE.txt)
