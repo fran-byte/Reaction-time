@@ -355,6 +355,4 @@ Want to improve this project?
 
 
 
----
 
-*Made with ❤️ for athletics and technology.*
